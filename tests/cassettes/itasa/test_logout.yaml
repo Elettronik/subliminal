@@ -1,0 +1,44 @@
+interactions:
+- request:
+    body: null
+    headers:
+      User-Agent: [Subliminal/2.0.rc1]
+    method: GET
+    uri: https://api.italiansubs.net/api/rest/users/login?apikey=d86ad6ec041b334fac1e512174ee04d5
+  response:
+    body: {string: !!python/unicode '<?xml version="1.0" encoding="utf-8"?>
+
+        <root><data><user><id>234965</id><name>elettronik</name><email>elettronik@gmail.com</email><last_visit>2016-04-16T06:19:33+02:00</last_visit><authcode>a2ce85688443779c0e802b1092273aa4</authcode><has_myitasa>1</has_myitasa><username>elettronik</username><register_date>2008-10-13T22:51:29+02:00</register_date><gender>unknown</gender><birthdate>0001-01-01</birthdate><location/><website_url/><unread_messages>0</unread_messages><avatar/></user></data><status>success</status></root>
+
+'}
+    headers:
+      alternate-protocol: ['443:npn-spdy/3.1']
+      cache-control: ['no-store, no-cache, must-revalidate, post-check=0, pre-check=0']
+      connection: [keep-alive]
+      content-type: [text/xml;charset=utf-8]
+      date: ['Sat, 16 Apr 2016 08:16:40 GMT']
+      expires: ['Thu, 19 Nov 1981 08:52:00 GMT']
+      pragma: [no-cache]
+      server: [nginx/1.8.0]
+      set-cookie: [PHPSESSID=8166f72be69633bcd53fa7e8370be6f0; path=/]
+      x-powered-by: [PHP/5.6.16]
+    status: {code: 200, message: OK}
+- request:
+    body: task=login&silent=true&option=com_user&remember=yes
+    headers:
+      Content-Length: ['86']
+      Content-Type: [application/x-www-form-urlencoded]
+      User-Agent: [Subliminal/2.0.rc1]
+    method: POST
+    uri: http://www.italiansubs.net/index.php
+  response:
+    body: {string: !!python/unicode ''}
+    headers:
+      connection: [keep-alive]
+      content-type: [text/html; charset=utf-8]
+      date: ['Sat, 16 Apr 2016 08:16:40 GMT']
+      location: ['http://www.italiansubs.net/']
+      server: [nginx/1.8.0]
+      x-powered-by: [PHP/5.6.16]
+    status: {code: 301, message: Moved Permanently}
+version: 1
