@@ -1,0 +1,1023 @@
+interactions:
+- request:
+    body: null
+    headers:
+      User-Agent: [Subliminal/2.0.rc1]
+    method: GET
+    uri: https://api.italiansubs.net/api/rest/users/login?apikey=d86ad6ec041b334fac1e512174ee04d5
+  response:
+    body: {string: !!python/unicode '<?xml version="1.0" encoding="utf-8"?>
+
+        <root><data><user><id>713600</id><name>subliminal-test</name><email>elettronik+subliminal-test@gmail.com</email><last_visit>2016-04-16T08:03:12+02:00</last_visit><authcode>1e5d5c311f4ef3d070dc965d934b95b6</authcode><has_myitasa>0</has_myitasa><username>subliminal-test</username><register_date>2016-03-06T17:08:20+01:00</register_date><gender>unknown</gender><birthdate>0001-01-01</birthdate><location/><website_url/><unread_messages>0</unread_messages><avatar/></user></data><status>success</status></root>
+
+'}
+    headers:
+      alternate-protocol: ['443:npn-spdy/3.1']
+      cache-control: ['no-store, no-cache, must-revalidate, post-check=0, pre-check=0']
+      connection: [keep-alive]
+      content-type: [text/xml;charset=utf-8]
+      date: ['Sat, 16 Apr 2016 08:52:59 GMT']
+      expires: ['Thu, 19 Nov 1981 08:52:00 GMT']
+      pragma: [no-cache]
+      server: [nginx/1.8.0]
+      set-cookie: [PHPSESSID=63bbee0d49a9f44ebceedf8ea1c4582b; path=/]
+      x-powered-by: [PHP/5.6.16]
+    status: {code: 200, message: OK}
+- request:
+    body: task=login&silent=true&option=com_user&remember=yes
+    headers:
+      Content-Length: ['99']
+      Content-Type: [application/x-www-form-urlencoded]
+      User-Agent: [Subliminal/2.0.rc1]
+    method: POST
+    uri: http://www.italiansubs.net/index.php
+  response:
+    body: {string: !!python/unicode ''}
+    headers:
+      connection: [keep-alive]
+      content-type: [text/html; charset=utf-8]
+      date: ['Sat, 16 Apr 2016 08:53:00 GMT']
+      location: ['http://www.italiansubs.net/index.php?option=com_user']
+      p3p: [CP="NOI ADM DEV PSAi COM NAV OUR OTRo STP IND DEM"]
+      server: [nginx/1.8.0]
+      set-cookie: [08c499f64b48fa670c9b210e6a9f5f28=836290870e5d3fcf23e215137e0cf1d7;
+          path=/, PHPSESSID=85cf5e81a6fe40d066c4641ad22c6059; path=/; domain=.italiansubs.net,
+        'PHPSESSID=85cf5e81a6fe40d066c4641ad22c6059; expires=Fri, 22-Apr-2016 10:53:00
+          GMT; Max-Age=525600; path=/; domain=.italiansubs.net', 'SMFCookie17499=a%3A4%3A%7Bi%3A0%3Bs%3A6%3A%22628840%22%3Bi%3A1%3Bs%3A40%3A%223eb307721f116ce20d91f846207d2d66a0b46c6b%22%3Bi%3A2%3Bi%3A1492332780%3Bi%3A3%3Bi%3A2%3B%7D;
+          expires=Sun, 16-Apr-2017 08:53:00 GMT; Max-Age=31536000; path=/; domain=.italiansubs.net',
+        PHPSESSID=fa5dca407a52341cf1bcb9954e47ca8b; path=/; domain=.italiansubs.net,
+        'PHPSESSID=85cf5e81a6fe40d066c4641ad22c6059; expires=Fri, 22-Apr-2016 10:53:00
+          GMT; Max-Age=525600; path=/; domain=.italiansubs.net', 'Max-Age=31536000;
+          expires=Sun, 16-Apr-2017 08:53:00 GMT; Max-Age=31536000; path=/; domain=.italiansubs.net',
+        'PHPSESSID=fa5dca407a52341cf1bcb9954e47ca8b; expires=Fri, 22-Apr-2016 10:53:00
+          GMT; Max-Age=525600; path=/; domain=.italiansubs.net', 'cb7d0ded6b8cd9e20ce31b4d792da3e9=58+9+1+C4F16+B5A+2164745+6415F+2+9551A+8155F+8+058461111+1+D5B55505D525A191154114C16+94559+B+B4114514B4011+A4B51405F115E5254+81A4A46515A5D+858+C59581F42+64045415F4D;
+          expires=Sun, 16-Apr-2017 08:53:00 GMT; Max-Age=31536000; path=/']
+      x-powered-by: [PHP/5.6.16]
+    status: {code: 301, message: Moved Permanently}
+- request:
+    body: null
+    headers:
+      User-Agent: [Subliminal/2.0.rc1]
+    method: GET
+    uri: https://api.italiansubs.net/api/rest/users/login?apikey=d86ad6ec041b334fac1e512174ee04d5
+  response:
+    body: {string: !!python/unicode '<?xml version="1.0" encoding="utf-8"?>
+
+        <root><data><user><id>713600</id><name>subliminal-test</name><email>elettronik+subliminal-test@gmail.com</email><last_visit>2016-04-16T08:53:00+02:00</last_visit><authcode>1e5d5c311f4ef3d070dc965d934b95b6</authcode><has_myitasa>0</has_myitasa><username>subliminal-test</username><register_date>2016-03-06T17:08:20+01:00</register_date><gender>unknown</gender><birthdate>0001-01-01</birthdate><location/><website_url/><unread_messages>0</unread_messages><avatar/></user></data><status>success</status></root>
+
+'}
+    headers:
+      alternate-protocol: ['443:npn-spdy/3.1']
+      cache-control: ['no-store, no-cache, must-revalidate, post-check=0, pre-check=0']
+      connection: [keep-alive]
+      content-type: [text/xml;charset=utf-8]
+      date: ['Sat, 16 Apr 2016 08:53:02 GMT']
+      expires: ['Thu, 19 Nov 1981 08:52:00 GMT']
+      pragma: [no-cache]
+      server: [nginx/1.8.0]
+      set-cookie: [PHPSESSID=a7e3fed2c6aaedb10941cd32804f5cf9; path=/]
+      x-powered-by: [PHP/5.6.16]
+    status: {code: 200, message: OK}
+- request:
+    body: task=login&silent=true&option=com_user&remember=yes
+    headers:
+      Content-Length: ['99']
+      Content-Type: [application/x-www-form-urlencoded]
+      User-Agent: [Subliminal/2.0.rc1]
+    method: POST
+    uri: http://www.italiansubs.net/index.php
+  response:
+    body: {string: !!python/unicode ''}
+    headers:
+      connection: [keep-alive]
+      content-type: [text/html; charset=utf-8]
+      date: ['Sat, 16 Apr 2016 08:53:03 GMT']
+      location: ['http://www.italiansubs.net/index.php?option=com_user']
+      p3p: [CP="NOI ADM DEV PSAi COM NAV OUR OTRo STP IND DEM"]
+      server: [nginx/1.8.0]
+      set-cookie: [08c499f64b48fa670c9b210e6a9f5f28=cea8e7017d457072992de4408b50047b;
+          path=/, PHPSESSID=5a86be94ae64243c6c67df63134dac93; path=/; domain=.italiansubs.net,
+        'PHPSESSID=5a86be94ae64243c6c67df63134dac93; expires=Fri, 22-Apr-2016 10:53:03
+          GMT; Max-Age=525600; path=/; domain=.italiansubs.net', 'SMFCookie17499=a%3A4%3A%7Bi%3A0%3Bs%3A6%3A%22628840%22%3Bi%3A1%3Bs%3A40%3A%223eb307721f116ce20d91f846207d2d66a0b46c6b%22%3Bi%3A2%3Bi%3A1492332783%3Bi%3A3%3Bi%3A2%3B%7D;
+          expires=Sun, 16-Apr-2017 08:53:03 GMT; Max-Age=31536000; path=/; domain=.italiansubs.net',
+        PHPSESSID=0573915c36729bee701e2a553496d2c8; path=/; domain=.italiansubs.net,
+        'PHPSESSID=5a86be94ae64243c6c67df63134dac93; expires=Fri, 22-Apr-2016 10:53:03
+          GMT; Max-Age=525600; path=/; domain=.italiansubs.net', 'Max-Age=31536000;
+          expires=Sun, 16-Apr-2017 08:53:03 GMT; Max-Age=31536000; path=/; domain=.italiansubs.net',
+        'PHPSESSID=0573915c36729bee701e2a553496d2c8; expires=Fri, 22-Apr-2016 10:53:03
+          GMT; Max-Age=525600; path=/; domain=.italiansubs.net', 'cb7d0ded6b8cd9e20ce31b4d792da3e9=58+9+1+C4F16+B5A+2164745+6415F+2+9551A+8155F+8+058461111+1+D5B55505D525A191154114C16+94559+B+B4114514B4011+A4B51405F115E5254+81A4A46515A5D+858+C59581F42+64045415F4D;
+          expires=Sun, 16-Apr-2017 08:53:03 GMT; Max-Age=31536000; path=/']
+      x-powered-by: [PHP/5.6.16]
+    status: {code: 301, message: Moved Permanently}
+- request:
+    body: null
+    headers:
+      Cookie: [SMFCookie17499=a%3A4%3A%7Bi%3A0%3Bs%3A6%3A%22628840%22%3Bi%3A1%3Bs%3A40%3A%223eb307721f116ce20d91f846207d2d66a0b46c6b%22%3Bi%3A2%3Bi%3A1492332783%3Bi%3A3%3Bi%3A2%3B%7D;
+          PHPSESSID=0573915c36729bee701e2a553496d2c8; Max-Age=31536000; PHPSESSID=a7e3fed2c6aaedb10941cd32804f5cf9]
+      User-Agent: [Subliminal/2.0.rc1]
+    method: GET
+    uri: https://api.italiansubs.net/api/rest/shows?apikey=d86ad6ec041b334fac1e512174ee04d5
+  response:
+    body: {string: !!python/unicode '<?xml version="1.0" encoding="utf-8"?>
+
+        <root><data><shows><show><id>2132</id><name>$#*! My Dad Says</name><fans>1088</fans><started>2010-09-23</started><ended>2011-02-17</ended></show><show><id>1363</id><name>10
+        Things I Hate About You</name><fans>1291</fans><started>2009-07-07</started><ended>2010-05-24</ended></show><show><id>1843</id><name>100
+        Questions</name><fans>384</fans><started>2010-05-27</started><ended>2010-07-01</ended></show><show><id>6621</id><name>11.22.63</name><fans>1765</fans><started>2016-02-15</started><ended/></show><show><id>5561</id><name>12
+        Monkeys</name><fans>1838</fans><started>2015-01-16</started><ended/></show><show><id>2897</id><name>2
+        Broke Girls</name><fans>4801</fans><started>2011-09-19</started><ended/></show><show><id>5</id><name>24</name><fans>3179</fans><started>2001-11-06</started><ended/></show><show><id>9</id><name>30
+        Rock</name><fans>1853</fans><started>2006-10-11</started><ended>2013-01-31</ended></show><show><id>2703</id><name>30
+        Seconds</name><fans>4</fans><started>2009-09-07</started><ended>2009-10-12</ended></show><show><id>3652</id><name>666
+        Park Avenue</name><fans>1749</fans><started>2012-09-30</started><ended>2013-07-13</ended></show><show><id>875</id><name>90210</name><fans>3379</fans><started>2008-09-02</started><ended>2013-05-13</ended></show><show><id>3876</id><name>A
+        Young Doctor''s Notebook</name><fans>1544</fans><started>0000-00-00</started><ended/></show><show><id>4856</id><name>About
+        A Boy</name><fans>394</fans><started>2014-02-22</started><ended>2015-02-17</ended></show><show><id>1436</id><name>Accidentally
+        on Purpose</name><fans>929</fans><started>2009-09-21</started><ended>2010-04-21</ended></show><show><id>2275</id><name>Accused</name><fans>149</fans><started>2010-11-15</started><ended>2012-09-04</ended></show><show><id>1389</id><name>After
+        Judgment</name><fans>38</fans><started/><ended/></show><show><id>2370</id><name>Aidan
+        5</name><fans>116</fans><started/><ended/></show><show><id>3126</id><name>Alcatraz</name><fans>5497</fans><started>2012-01-16</started><ended>2012-03-26</ended></show><show><id>11</id><name>Alias</name><fans>2151</fans><started>2001-09-30</started><ended>2006-05-22</ended></show><show><id>1660</id><name>Alice</name><fans>271</fans><started>2009-12-06</started><ended>2009-12-07</ended></show><show><id>403</id><name>Aliens
+        In America</name><fans>108</fans><started>2007-10-01</started><ended>2008-05-18</ended></show><show><id>1252</id><name>All
+        the Small Things</name><fans>89</fans><started>2009-03-31</started><ended>2009-05-05</ended></show><show><id>3083</id><name>Allen
+        Gregory</name><fans>75</fans><started>2011-10-30</started><ended>2011-12-18</ended></show><show><id>4638</id><name>Almost
+        Human</name><fans>2276</fans><started>2013-11-17</started><ended>2014-03-03</ended></show><show><id>2680</id><name>Alphas</name><fans>3315</fans><started>2011-07-11</started><ended>2012-10-22</ended></show><show><id>6618</id><name>American
+        Crime Story</name><fans>743</fans><started/><ended/></show><show><id>13</id><name>American
+        Dad</name><fans>2844</fans><started>2005-02-06</started><ended/></show><show><id>2804</id><name>American
+        Horror Story</name><fans>8186</fans><started>2011-10-05</started><ended/></show><show><id>16</id><name>Ancient
+        Rome</name><fans>81</fans><started>2006-09-21</started><ended>2006-10-26</ended></show><show><id>6217</id><name>And
+        Then There Were None</name><fans>276</fans><started/><ended/></show><show><id>18</id><name>Andy
+        Barker P.I.</name><fans>15</fans><started>2007-03-15</started><ended>2007-04-14</ended></show><show><id>6628</id><name>Angie
+        Tribeca</name><fans>115</fans><started/><ended/></show><show><id>1057</id><name>Apparitions</name><fans>184</fans><started>2008-11-13</started><ended>2008-12-18</ended></show><show><id>5779</id><name>Aquarius</name><fans>748</fans><started>2015-05-28</started><ended/></show><show><id>1687</id><name>Archer</name><fans>659</fans><started>2009-09-17</started><ended/></show><show><id>82</id><name>Army
+        Wives</name><fans>366</fans><started>2007-06-03</started><ended>2014-03-16</ended></show><show><id>3051</id><name>Arrested
+        Development</name><fans>1052</fans><started>2003-11-02</started><ended/></show><show><id>3752</id><name>Arrow</name><fans>9469</fans><started>2012-10-10</started><ended/></show><show><id>5476</id><name>Ascension</name><fans>607</fans><started/><ended/></show><show><id>6382</id><name>Ash
+        Vs Evil Dead</name><fans>1599</fans><started>2015-10-31</started><ended/></show><show><id>686</id><name>Ashes
+        to Ashes</name><fans>444</fans><started>2008-02-07</started><ended>2010-05-21</ended></show><show><id>4588</id><name>Atlantis</name><fans>633</fans><started>2013-09-28</started><ended>2015-05-16</ended></show><show><id>4184</id><name>Avengers
+        Assemble</name><fans>233</fans><started>2013-05-26</started><ended/></show><show><id>3268</id><name>Awake</name><fans>1753</fans><started>2012-03-01</started><ended>2012-05-24</ended></show><show><id>3419</id><name>Baby
+        Daddy</name><fans>1013</fans><started>2012-06-20</started><ended/></show><show><id>482</id><name>Back
+        To You</name><fans>28</fans><started>2007-09-19</started><ended>2008-05-14</ended></show><show><id>4976</id><name>Bad
+        Teacher</name><fans>103</fans><started>2014-04-24</started><ended>2014-07-26</ended></show><show><id>3123</id><name>Bag
+        Of Bones</name><fans>119</fans><started>2011-12-11</started><ended>2011-12-12</ended></show><show><id>5693</id><name>Band
+        of Brothers</name><fans>289</fans><started>2001-09-09</started><ended>2001-11-04</ended></show><show><id>3962</id><name>Banshee</name><fans>2609</fans><started>2013-01-11</started><ended/></show><show><id>6606</id><name>Baskets</name><fans>223</fans><started>2016-01-21</started><ended/></show><show><id>4085</id><name>Bates
+        Motel</name><fans>1656</fans><started>2013-03-18</started><ended/></show><show><id>84</id><name>Battlestar
+        Galactica</name><fans>4360</fans><started>2003-12-08</started><ended>2009-03-20</ended></show><show><id>3832</id><name>Battlestar
+        Galactica: Blood &amp; Chrome</name><fans>738</fans><started>2013-02-10</started><ended>2013-02-10</ended></show><show><id>1196</id><name>Beautiful
+        People</name><fans>114</fans><started>2008-10-02</started><ended>2009-12-18</ended></show><show><id>3757</id><name>Beauty
+        and the Beast</name><fans>1883</fans><started>2012-10-11</started><ended/></show><show><id>2772</id><name>Beaver
+        Falls</name><fans>359</fans><started>2011-07-27</started><ended>2012-09-10</ended></show><show><id>3076</id><name>Beavis
+        And Butthead</name><fans>253</fans><started>1993-03-08</started><ended>2011-12-29</ended></show><show><id>2444</id><name>Becoming
+        Human</name><fans>120</fans><started/><ended/></show><show><id>1155</id><name>Being
+        Erica</name><fans>1040</fans><started>2009-01-05</started><ended>2011-12-12</ended></show><show><id>799</id><name>Being
+        Human</name><fans>1687</fans><started>2008-02-18</started><ended>2013-03-10</ended></show><show><id>2350</id><name>Being
+        Human US</name><fans>1017</fans><started>2011-01-17</started><ended>2014-04-07</ended></show><show><id>4876</id><name>Believe</name><fans>737</fans><started>2014-03-10</started><ended>2014-06-15</ended></show><show><id>3613</id><name>Ben
+        And Kate</name><fans>193</fans><started>2012-09-25</started><ended>2013-01-22</ended></show><show><id>3318</id><name>Bent</name><fans>102</fans><started>2012-03-21</started><ended>2012-04-04</ended></show><show><id>5235</id><name>Better
+        Call Saul</name><fans>7112</fans><started>2015-02-08</started><ended/></show><show><id>1200</id><name>Better
+        Off Ted</name><fans>1246</fans><started>2009-03-18</started><ended>2010-01-26</ended></show><show><id>2135</id><name>Better
+        With You</name><fans>471</fans><started>2010-09-22</started><ended>2011-05-11</ended></show><show><id>363</id><name>Big
+        Love</name><fans>211</fans><started>2006-03-12</started><ended>2011-03-20</ended></show><show><id>531</id><name>Big
+        Shots</name><fans>68</fans><started>2007-09-27</started><ended>2008-01-24</ended></show><show><id>6511</id><name>Billions</name><fans>818</fans><started/><ended/></show><show><id>406</id><name>Bionic
+        Woman</name><fans>248</fans><started>2007-09-26</started><ended>2007-11-28</ended></show><show><id>3249</id><name>Birdsong</name><fans>94</fans><started>2012-01-22</started><ended>2012-01-29</ended></show><show><id>3276</id><name>Bite
+        Me</name><fans>210</fans><started/><ended/></show><show><id>517</id><name>Black
+        Books</name><fans>301</fans><started>2000-09-29</started><ended>2004-04-15</ended></show><show><id>3149</id><name>Black
+        Mirror</name><fans>4114</fans><started>2011-12-04</started><ended/></show><show><id>4799</id><name>Black
+        Sails</name><fans>3284</fans><started>2014-01-25</started><ended/></show><show><id>3477</id><name>Blackout</name><fans>116</fans><started>2012-07-02</started><ended>2012-07-16</ended></show><show><id>3289</id><name>Blackpool</name><fans>144</fans><started>2004-11-11</started><ended>2006-06-10</ended></show><show><id>6071</id><name>Blindspot</name><fans>1829</fans><started>2015-09-21</started><ended/></show><show><id>20</id><name>Blood
+        Ties</name><fans>213</fans><started>2007-03-11</started><ended>2007-12-07</ended></show><show><id>1729</id><name>Blue
+        Mountain State</name><fans>3352</fans><started>2010-01-12</started><ended>2011-11-30</ended></show><show><id>1716</id><name>Boardwalk
+        Empire</name><fans>5701</fans><started>2010-09-19</started><ended>2014-10-26</ended></show><show><id>2356</id><name>Bob''s
+        Burgers</name><fans>338</fans><started>2011-01-09</started><ended/></show><show><id>5780</id><name>BoJack
+        Horseman</name><fans>258</fans><started/><ended/></show><show><id>4319</id><name>Bomb
+        Girls</name><fans>176</fans><started>2012-01-04</started><ended>2013-04-29</ended></show><show><id>822</id><name>Bonekickers</name><fans>74</fans><started>2008-07-08</started><ended>2008-08-12</ended></show><show><id>22</id><name>Bones</name><fans>3490</fans><started>2005-09-13</started><ended/></show><show><id>1413</id><name>Bored
+        to Death</name><fans>1332</fans><started>2009-09-20</started><ended>2011-11-28</ended></show><show><id>5990</id><name>Bosch</name><fans>477</fans><started/><ended/></show><show><id>2964</id><name>Boss</name><fans>988</fans><started>2011-10-21</started><ended>2012-10-19</ended></show><show><id>797</id><name>Boston
+        Legal</name><fans>295</fans><started>2004-10-03</started><ended>2008-12-08</ended></show><show><id>1250</id><name>Boy
+        Meets Girl</name><fans>68</fans><started>2009-05-01</started><ended>2009-05-22</ended></show><show><id>668</id><name>Breaking
+        Bad</name><fans>14477</fans><started>2008-01-20</started><ended>2013-09-29</ended></show><show><id>2509</id><name>Breaking
+        In</name><fans>885</fans><started>2011-04-06</started><ended>2012-04-03</ended></show><show><id>2484</id><name>Breakout
+        Kings</name><fans>1000</fans><started>2011-03-13</started><ended>2012-05-17</ended></show><show><id>1036</id><name>Britannia
+        High</name><fans>76</fans><started>2008-10-26</started><ended>2008-12-21</ended></show><show><id>4941</id><name>Broad
+        City</name><fans>280</fans><started>2014-01-22</started><ended/></show><show><id>4198</id><name>Broadchurch</name><fans>1773</fans><started>2013-03-04</started><ended/></show><show><id>4405</id><name>Brooklyn
+        Nine-Nine</name><fans>1995</fans><started>2013-09-17</started><ended/></show><show><id>1118</id><name>Brotherhood</name><fans>88</fans><started>2006-07-09</started><ended>2008-12-21</ended></show><show><id>24</id><name>Brothers
+        &amp; Sisters</name><fans>2285</fans><started>2006-09-24</started><ended>2011-05-08</ended></show><show><id>3256</id><name>Buffy
+        The Vampire Slayer</name><fans>1144</fans><started>1997-03-10</started><ended>2003-05-20</ended></show><show><id>3412</id><name>Bunheads</name><fans>990</fans><started>2012-06-11</started><ended>2013-02-25</ended></show><show><id>360</id><name>Burn
+        Notice</name><fans>1324</fans><started>2007-06-28</started><ended>2013-09-12</ended></show><show><id>5890</id><name>Busted</name><fans>0</fans><started/><ended/></show><show><id>384</id><name>Californication</name><fans>7586</fans><started>2007-08-13</started><ended>2014-06-29</ended></show><show><id>2487</id><name>Camelot</name><fans>1643</fans><started>2011-02-25</started><ended>2011-06-10</ended></show><show><id>3842</id><name>Campus</name><fans>48</fans><started>2011-04-05</started><ended>2011-05-10</ended></show><show><id>519</id><name>Cane</name><fans>31</fans><started>2007-09-25</started><ended>2007-12-18</ended></show><show><id>721</id><name>Canterbury''s
+        Law</name><fans>36</fans><started>2008-03-10</started><ended>2008-04-18</ended></show><show><id>1230</id><name>Caprica</name><fans>2235</fans><started>2010-01-22</started><ended>2011-01-04</ended></show><show><id>4838</id><name>Carnivale</name><fans>267</fans><started>2003-09-14</started><ended>2005-03-27</ended></show><show><id>563</id><name>Carpoolers</name><fans>80</fans><started>2007-10-02</started><ended>2008-03-04</ended></show><show><id>2576</id><name>Case
+        Sensitive</name><fans>65</fans><started>2011-05-03</started><ended>2012-07-13</ended></show><show><id>646</id><name>Cashmere
+        Mafia</name><fans>184</fans><started>2008-01-06</started><ended>2008-02-20</ended></show><show><id>1170</id><name>Castle</name><fans>6038</fans><started>2009-03-09</started><ended/></show><show><id>1311</id><name>Casualty
+        1909</name><fans>107</fans><started>2009-06-14</started><ended>2009-07-19</ended></show><show><id>6289</id><name>Catastrophe</name><fans>122</fans><started>2015-01-19</started><ended/></show><show><id>3009</id><name>Charlie''s
+        Angels</name><fans>247</fans><started>2011-09-22</started><ended>2011-11-10</ended></show><show><id>5798</id><name>Chef''s
+        Table</name><fans>92</fans><started>2015-02-12</started><ended>2015-02-12</ended></show><show><id>4375</id><name>Chickens
+        </name><fans>86</fans><started>2013-08-22</started><ended>2013-09-26</ended></show><show><id>6495</id><name>Childhood''s
+        End</name><fans>214</fans><started>2015-12-14</started><ended>2015-12-16</ended></show><show><id>1948</id><name>Childrens''
+        Hospital</name><fans>82</fans><started>2010-07-11</started><ended/></show><show><id>408</id><name>Chuck</name><fans>10567</fans><started>2007-09-24</started><ended>2012-01-27</ended></show><show><id>3758</id><name>Citizen
+        Khan</name><fans>3</fans><started>2012-08-27</started><ended/></show><show><id>1258</id><name>Clone</name><fans>123</fans><started>2008-11-17</started><ended>2008-12-22</ended></show><show><id>35</id><name>Close
+        To Home</name><fans>77</fans><started>2005-10-04</started><ended>2007-05-11</ended></show><show><id>5702</id><name>Code
+        Of A Killer</name><fans>95</fans><started>2015-04-06</started><ended>2015-04-13</ended></show><show><id>37</id><name>Cold
+        Case</name><fans>657</fans><started>2003-09-28</started><ended>2010-05-02</ended></show><show><id>6523</id><name>Colony</name><fans>980</fans><started>2016-01-14</started><ended/></show><show><id>3563</id><name>Coma</name><fans>236</fans><started>2012-09-03</started><ended>2012-09-04</ended></show><show><id>697</id><name>Comanche
+        Moon</name><fans>15</fans><started>2008-01-13</started><ended>2008-01-16</ended></show><show><id>2367</id><name>Come
+        Fly With Me</name><fans>217</fans><started>2010-12-25</started><ended>2011-02-08</ended></show><show><id>1429</id><name>Community</name><fans>4426</fans><started>2009-09-17</started><ended/></show><show><id>6179</id><name>Con
+        Man</name><fans>96</fans><started/><ended/></show><show><id>5099</id><name>Constantine</name><fans>2399</fans><started>2014-10-24</started><ended>2015-02-13</ended></show><show><id>3395</id><name>Continuum</name><fans>4077</fans><started>2012-05-27</started><ended/></show><show><id>3538</id><name>Copper</name><fans>954</fans><started>2012-08-04</started><ended>2013-09-22</ended></show><show><id>1410</id><name>Cougar
+        Town</name><fans>3107</fans><started>2009-09-23</started><ended>2015-03-31</ended></show><show><id>1928</id><name>Covert
+        Affairs</name><fans>1506</fans><started>2010-07-13</started><ended>2014-12-18</ended></show><show><id>1120</id><name>Cranford</name><fans>125</fans><started>2007-11-18</started><ended>2009-12-27</ended></show><show><id>1017</id><name>Crash</name><fans>313</fans><started>2008-10-17</started><ended>2009-12-18</ended></show><show><id>39</id><name>Criminal
+        Minds</name><fans>3609</fans><started>2005-09-22</started><ended/></show><show><id>2426</id><name>Criminal
+        Minds: Suspect Behavior</name><fans>593</fans><started>2011-02-16</started><ended>2011-05-25</ended></show><show><id>4924</id><name>Crisis</name><fans>508</fans><started>2014-03-16</started><ended/></show><show><id>5006</id><name>Crossbones</name><fans>644</fans><started>2014-05-30</started><ended>2014-08-02</ended></show><show><id>41</id><name>Crossing
+        Jordan</name><fans>127</fans><started>2001-09-24</started><ended>2007-05-16</ended></show><show><id>1025</id><name>Crusoe</name><fans>83</fans><started>2008-10-17</started><ended>2009-01-31</ended></show><show><id>27</id><name>CSI:
+        Crime Scene Investigation</name><fans>2325</fans><started>2000-10-06</started><ended/></show><show><id>5633</id><name>CSI:
+        Cyber</name><fans>476</fans><started>2015-03-04</started><ended/></show><show><id>29</id><name>CSI:
+        Miami</name><fans>1135</fans><started>2002-09-23</started><ended>2012-04-08</ended></show><show><id>28</id><name>CSI:
+        New York</name><fans>1117</fans><started>2004-09-22</started><ended>2013-02-22</ended></show><show><id>4038</id><name>Cult</name><fans>514</fans><started>2013-02-19</started><ended>2013-07-12</ended></show><show><id>1173</id><name>Cupid</name><fans>265</fans><started>2009-03-31</started><ended>2009-06-16</ended></show><show><id>1650</id><name>Curb
+        Your Enthusiasm</name><fans>251</fans><started>2000-10-15</started><ended/></show><show><id>4093</id><name>Da
+        Vinci''s Demons</name><fans>3448</fans><started>2013-04-12</started><ended/></show><show><id>3420</id><name>Dallas</name><fans>247</fans><started>2012-06-13</started><ended>2014-09-22</ended></show><show><id>448</id><name>Damages</name><fans>1268</fans><started>2007-07-24</started><ended>2012-09-12</ended></show><show><id>580</id><name>Daria</name><fans>420</fans><started>1997-03-03</started><ended>2002-01-21</ended></show><show><id>1371</id><name>Dark
+        Blue</name><fans>622</fans><started>2009-07-15</started><ended>2010-09-15</ended></show><show><id>6689</id><name>Dark
+        Matter</name><fans>324</fans><started>2015-06-12</started><ended/></show><show><id>4227</id><name>Dates</name><fans>245</fans><started>2013-06-10</started><ended/></show><show><id>44</id><name>Day
+        Break</name><fans>222</fans><started>2006-11-15</started><ended>2006-12-13</ended></show><show><id>6480</id><name>DC''s
+        Legends of Tomorrow</name><fans>1869</fans><started>2016-01-28</started><ended/></show><show><id>679</id><name>Dead
+        Like Me</name><fans>651</fans><started>2003-06-27</started><ended>2004-10-31</ended></show><show><id>1027</id><name>Dead
+        Set</name><fans>560</fans><started>2008-10-27</started><ended>2008-10-31</ended></show><show><id>4758</id><name>Death
+        Comes To Pemberley</name><fans>150</fans><started>2013-12-26</started><ended/></show><show><id>2792</id><name>Death
+        Valley</name><fans>962</fans><started>2011-08-29</started><ended>2011-11-21</ended></show><show><id>4132</id><name>Defiance</name><fans>2657</fans><started>2013-04-15</started><ended/></show><show><id>1088</id><name>Demons</name><fans>162</fans><started>2009-01-03</started><ended>2009-02-07</ended></show><show><id>4001</id><name>Derek</name><fans>252</fans><started>2012-04-12</started><ended/></show><show><id>46</id><name>Desperate
+        Housewives</name><fans>5316</fans><started>2004-10-03</started><ended>2012-05-13</ended></show><show><id>2007</id><name>Detroit
+        1-8-7</name><fans>286</fans><started>2010-09-21</started><ended>2011-05-13</ended></show><show><id>4226</id><name>Devious
+        Maids</name><fans>1034</fans><started>2013-06-23</started><ended/></show><show><id>48</id><name>Dexter</name><fans>15875</fans><started>2006-10-01</started><ended>2013-09-22</ended></show><show><id>6528</id><name>Dickensian</name><fans>258</fans><started>2015-12-26</started><ended/></show><show><id>6004</id><name>Difficult
+        People</name><fans>53</fans><started>2015-08-05</started><ended/></show><show><id>329</id><name>Dilbert</name><fans>53</fans><started>1999-01-25</started><ended>2000-07-25</ended></show><show><id>2298</id><name>Dirk
+        Gently</name><fans>521</fans><started>2010-12-16</started><ended>2012-03-19</ended></show><show><id>50</id><name>Dirt</name><fans>262</fans><started>2007-01-02</started><ended>2008-04-13</ended></show><show><id>539</id><name>Dirty
+        Sexy Money</name><fans>1335</fans><started>2007-09-26</started><ended>2009-08-08</ended></show><show><id>3971</id><name>Do
+        No Harm</name><fans>323</fans><started>2013-01-31</started><ended>2013-08-31</ended></show><show><id>894</id><name>Do
+        not disturb</name><fans>11</fans><started>2008-09-10</started><ended>2008-09-24</ended></show><show><id>748</id><name>Doctor
+        Who</name><fans>6534</fans><started>2005-03-26</started><ended/></show><show><id>6089</id><name>Documentary
+        Now!</name><fans>101</fans><started>2015-08-20</started><ended/></show><show><id>1137</id><name>Dollhouse</name><fans>2845</fans><started>2009-02-13</started><ended>2010-01-29</ended></show><show><id>3345</id><name>Don''t
+        Trust the Bitch in Apartment 23</name><fans>2642</fans><started>2012-04-11</started><ended>2013-01-15</ended></show><show><id>2179</id><name>Downton
+        Abbey</name><fans>3894</fans><started>2010-09-26</started><ended/></show><show><id>832</id><name>Dr.Horrible''s
+        Sing-Along Blog</name><fans>685</fans><started/><ended/></show><show><id>4587</id><name>Dracula</name><fans>2040</fans><started>2013-10-25</started><ended>2014-01-24</ended></show><show><id>3056</id><name>Dragon
+        Age: Redemption</name><fans>275</fans><started/><ended/></show><show><id>55</id><name>Drive</name><fans>38</fans><started>2007-04-13</started><ended>2007-07-15</ended></show><show><id>369</id><name>Durham
+        County</name><fans>85</fans><started>2007-05-07</started><ended>2010-11-29</ended></show><show><id>57</id><name>E.R.</name><fans>1017</fans><started>1994-09-19</started><ended>2009-04-02</ended></show><show><id>1495</id><name>Eastwick</name><fans>695</fans><started>2009-09-23</started><ended>2009-12-30</ended></show><show><id>4099</id><name>Elementary</name><fans>3003</fans><started>2012-09-27</started><ended/></show><show><id>1001</id><name>Eleventh
+        Hour</name><fans>498</fans><started>2008-10-09</started><ended>2009-04-02</ended></show><show><id>653</id><name>Eli
+        Stone</name><fans>893</fans><started>2008-01-11</started><ended>2009-07-11</ended></show><show><id>1588</id><name>Emma</name><fans>267</fans><started>2009-10-04</started><ended>2009-10-25</ended></show><show><id>4612</id><name>Emma
+        Approved</name><fans>51</fans><started/><ended/></show><show><id>6673</id><name>Empire</name><fans>157</fans><started/><ended/></show><show><id>2886</id><name>Enlightened</name><fans>245</fans><started>2011-10-10</started><ended>2013-03-03</ended></show><show><id>839</id><name>Entourage</name><fans>558</fans><started>2004-07-18</started><ended>2011-09-11</ended></show><show><id>2300</id><name>Episodes</name><fans>1353</fans><started>2011-01-09</started><ended/></show><show><id>359</id><name>Epitafios</name><fans>13</fans><started>2005-12-07</started><ended>2009-07-12</ended></show><show><id>61</id><name>Eureka</name><fans>2569</fans><started>2006-07-18</started><ended>2012-07-16</ended></show><show><id>63</id><name>Everwood</name><fans>599</fans><started>2002-09-16</started><ended>2006-06-05</ended></show><show><id>65</id><name>Everybody
+        Hates Chris</name><fans>202</fans><started>2005-09-22</started><ended>2009-05-08</ended></show><show><id>634</id><name>Exes
+        &amp; Oh''s</name><fans>73</fans><started>2007-10-08</started><ended/></show><show><id>2570</id><name>Exile</name><fans>145</fans><started>2011-05-01</started><ended>2011-05-03</ended></show><show><id>5160</id><name>Extant</name><fans>1394</fans><started>2014-07-09</started><ended/></show><show><id>2676</id><name>Fairly
+        Legal</name><fans>639</fans><started>2011-01-20</started><ended>2012-06-15</ended></show><show><id>661</id><name>Fairy
+        Tales</name><fans>38</fans><started>2008-01-10</started><ended>2008-01-31</ended></show><show><id>436</id><name>Fallen</name><fans>72</fans><started>2006-07-23</started><ended>2007-08-05</ended></show><show><id>2646</id><name>Falling
+        Skies</name><fans>6345</fans><started>2011-06-19</started><ended>2015-08-30</ended></show><show><id>67</id><name>Family
+        Guy</name><fans>6299</fans><started>1999-01-31</started><ended/></show><show><id>4177</id><name>Family
+        Tree</name><fans>134</fans><started>2013-05-12</started><ended>2013-07-07</ended></show><show><id>4931</id><name>Fargo</name><fans>5069</fans><started>2014-04-15</started><ended/></show><show><id>421</id><name>Father
+        Ted</name><fans>224</fans><started>1995-04-21</started><ended>1998-05-01</ended></show><show><id>786</id><name>Fear
+        Itself</name><fans>140</fans><started>2008-06-05</started><ended>2008-07-31</ended></show><show><id>6073</id><name>Fear
+        The Walking Dead</name><fans>2413</fans><started>2015-08-23</started><ended/></show><show><id>2657</id><name>Femme
+        Fatales</name><fans>284</fans><started>2011-05-13</started><ended>2012-08-10</ended></show><show><id>3899</id><name>Firefly</name><fans>1017</fans><started>2002-09-20</started><ended>2002-12-20</ended></show><show><id>1442</id><name>Flash
+        Forward</name><fans>8849</fans><started>2009-09-24</started><ended>2010-05-27</ended></show><show><id>419</id><name>Flash
+        Gordon</name><fans>57</fans><started>2007-08-10</started><ended>2008-02-08</ended></show><show><id>825</id><name>Flashpoint</name><fans>629</fans><started>2008-07-11</started><ended>2012-12-13</ended></show><show><id>6425</id><name>Flesh
+        and Bone</name><fans>297</fans><started/><ended/></show><show><id>453</id><name>Flight
+        Of The Conchords</name><fans>185</fans><started>2007-06-17</started><ended>2009-03-22</ended></show><show><id>1186</id><name>FM</name><fans>73</fans><started>2009-02-25</started><ended>2009-04-01</ended></show><show><id>1145</id><name>Forbidden
+        Science</name><fans>296</fans><started>2009-01-10</started><ended>2009-03-28</ended></show><show><id>5215</id><name>Forever</name><fans>1256</fans><started>2014-09-22</started><ended>2015-05-05</ended></show><show><id>5587</id><name>Fortitude</name><fans>638</fans><started>2015-01-29</started><ended/></show><show><id>2604</id><name>Franklin
+        &amp; Bash</name><fans>773</fans><started>2011-06-01</started><ended>2014-10-22</ended></show><show><id>632</id><name>Freaks
+        and Geeks</name><fans>290</fans><started>1999-09-25</started><ended>2000-10-17</ended></show><show><id>1152</id><name>Free
+        Agents</name><fans>27</fans><started>2009-02-13</started><ended>2009-03-20</ended></show><show><id>3035</id><name>Fresh
+        Meat</name><fans>626</fans><started>2011-09-21</started><ended/></show><show><id>72</id><name>Friday
+        Night Lights</name><fans>1390</fans><started>2006-10-03</started><ended>2011-02-09</ended></show><show><id>2801</id><name>Friends
+        With Benefits</name><fans>617</fans><started>2011-08-05</started><ended>2011-09-09</ended></show><show><id>801</id><name>Fringe</name><fans>18603</fans><started>2008-09-09</started><ended>2013-01-18</ended></show><show><id>621</id><name>Futurama</name><fans>4945</fans><started>1999-03-28</started><ended>2013-09-04</ended></show><show><id>5526</id><name>Galavant</name><fans>1194</fans><started/><ended/></show><show><id>2291</id><name>Game
+        of Thrones</name><fans>23561</fans><started>2010-12-10</started><ended/></show><show><id>5225</id><name>Garfunkel
+        and Oates</name><fans>230</fans><started>2014-08-07</started><ended>2014-09-25</ended></show><show><id>971</id><name>Gary
+        Unmarried</name><fans>398</fans><started>2008-09-24</started><ended>2010-03-31</ended></show><show><id>1060</id><name>Gavin
+        and Stacey</name><fans>52</fans><started>2007-05-13</started><ended>2010-01-01</ended></show><show><id>3265</id><name>GCB</name><fans>520</fans><started>2012-03-04</started><ended>2012-05-06</ended></show><show><id>836</id><name>Generation
+        Kill</name><fans>352</fans><started>2008-07-13</started><ended>2008-08-24</ended></show><show><id>2259</id><name>George
+        Carlin</name><fans>82</fans><started/><ended/></show><show><id>74</id><name>Ghost
+        Whisperer</name><fans>1210</fans><started>2005-09-23</started><ended>2010-05-21</ended></show><show><id>77</id><name>Gilmore
+        Girls</name><fans>2656</fans><started>2000-10-05</started><ended>2007-05-15</ended></show><show><id>3330</id><name>Girls</name><fans>2356</fans><started>2012-04-15</started><ended/></show><show><id>1255</id><name>Glee</name><fans>6380</fans><started>2009-05-19</started><ended>2015-03-20</ended></show><show><id>3588</id><name>Go
+        On</name><fans>1355</fans><started>2012-08-08</started><ended>2013-04-11</ended></show><show><id>2717</id><name>GOLD</name><fans>4</fans><started/><ended/></show><show><id>475</id><name>Gossip
+        Girl</name><fans>8408</fans><started>2007-09-19</started><ended>2012-12-17</ended></show><show><id>5206</id><name>Gotham</name><fans>6183</fans><started>2014-09-22</started><ended/></show><show><id>5722</id><name>Grace
+        and Frankie</name><fans>229</fans><started>2015-05-08</started><ended/></show><show><id>4249</id><name>Graceland</name><fans>1072</fans><started>2013-06-06</started><ended/></show><show><id>1813</id><name>Gravity</name><fans>326</fans><started>2010-04-23</started><ended>2010-06-25</ended></show><show><id>3183</id><name>Great
+        Expectations</name><fans>206</fans><started>2011-12-27</started><ended>2011-12-29</ended></show><show><id>382</id><name>Greek</name><fans>3417</fans><started>2007-07-09</started><ended>2011-03-07</ended></show><show><id>79</id><name>Grey''s
+        Anatomy</name><fans>12548</fans><started>2005-03-27</started><ended/></show><show><id>3071</id><name>Grimm</name><fans>4541</fans><started>2011-10-28</started><ended/></show><show><id>4689</id><name>Ground
+        Floor</name><fans>1042</fans><started>2013-11-14</started><ended>2015-02-10</ended></show><show><id>5053</id><name>Halt
+        and Catch Fire</name><fans>1589</fans><started>2014-06-01</started><ended/></show><show><id>6059</id><name>Hand
+        of God</name><fans>406</fans><started>2015-09-04</started><ended/></show><show><id>1479</id><name>Hank</name><fans>44</fans><started>2009-09-30</started><ended>2009-11-04</ended></show><show><id>4049</id><name>Hannibal</name><fans>4529</fans><started>2013-04-04</started><ended>2015-08-29</ended></show><show><id>6697</id><name>Hap
+        and Leonard</name><fans>407</fans><started>2016-03-02</started><ended/></show><show><id>2540</id><name>Happy
+        Endings</name><fans>1864</fans><started>2011-04-13</started><ended>2013-05-03</ended></show><show><id>88</id><name>Happy
+        Hour</name><fans>9</fans><started>2006-09-07</started><ended>2006-11-02</ended></show><show><id>1816</id><name>Happy
+        Town</name><fans>778</fans><started>2010-04-28</started><ended>2010-06-16</ended></show><show><id>5847</id><name>Happy
+        Valley</name><fans>187</fans><started/><ended/></show><show><id>5717</id><name>Happyish</name><fans>176</fans><started/><ended/></show><show><id>2323</id><name>Hard
+        Drive 13</name><fans>20</fans><started/><ended/></show><show><id>1209</id><name>Harper''s
+        Island</name><fans>2834</fans><started>2009-04-09</started><ended>2009-07-11</ended></show><show><id>2941</id><name>Hart
+        Of Dixie</name><fans>3355</fans><started>2011-09-26</started><ended>2015-03-27</ended></show><show><id>1875</id><name>Haven</name><fans>2777</fans><started>2010-07-09</started><ended/></show><show><id>2065</id><name>Hawaii
+        Five-0</name><fans>2139</fans><started>2010-09-20</started><ended/></show><show><id>1305</id><name>Hawthorne</name><fans>246</fans><started>2009-06-16</started><ended>2011-08-16</ended></show><show><id>769</id><name>He
+        Kills Coppers</name><fans>14</fans><started>2008-03-23</started><ended>2008-04-06</ended></show><show><id>353</id><name>Heartland</name><fans>16</fans><started>2007-06-18</started><ended>2007-08-13</ended></show><show><id>90</id><name>Heist</name><fans>9</fans><started>2006-03-22</started><ended>2006-04-19</ended></show><show><id>4745</id><name>Helix</name><fans>2172</fans><started>2014-01-10</started><ended>2015-04-10</ended></show><show><id>3068</id><name>Hell
+        On Wheels</name><fans>1915</fans><started>2011-11-06</started><ended/></show><show><id>1999</id><name>Hellcats</name><fans>1100</fans><started>2010-09-08</started><ended>2011-05-17</ended></show><show><id>4590</id><name>Hello
+        Ladies</name><fans>321</fans><started>2013-09-29</started><ended>2013-11-17</ended></show><show><id>92</id><name>Help
+        Me Help You</name><fans>7</fans><started>2006-09-26</started><ended>2006-12-12</ended></show><show><id>4079</id><name>Hemlock
+        Grove</name><fans>987</fans><started>2013-04-19</started><ended/></show><show><id>94</id><name>Heroes</name><fans>13780</fans><started>2006-09-25</started><ended>2010-02-08</ended></show><show><id>6144</id><name>Heroes
+        Reborn</name><fans>1944</fans><started>2015-09-24</started><ended/></show><show><id>6077</id><name>Heroes
+        Reborn: Dark Matters</name><fans>373</fans><started/><ended/></show><show><id>611</id><name>HEX</name><fans>123</fans><started>2004-10-17</started><ended>2005-12-18</ended></show><show><id>98</id><name>Hidden
+        Palms</name><fans>120</fans><started>2007-05-30</started><ended>2007-07-04</ended></show><show><id>2946</id><name>Homeland</name><fans>9982</fans><started>2011-10-02</started><ended/></show><show><id>4522</id><name>Hostages</name><fans>667</fans><started>2013-09-23</started><ended>2014-01-06</ended></show><show><id>1898</id><name>Hot
+        in Cleveland</name><fans>471</fans><started>2010-06-16</started><ended>2015-06-03</ended></show><show><id>52</id><name>House</name><fans>14588</fans><started>2004-11-16</started><ended>2012-05-21</ended></show><show><id>3946</id><name>House
+        of Cards</name><fans>7973</fans><started>2013-02-01</started><ended/></show><show><id>854</id><name>House
+        of Saddam</name><fans>45</fans><started>2008-07-30</started><ended>2008-08-20</ended></show><show><id>100</id><name>How
+        I Met Your Mother</name><fans>16000</fans><started>2005-09-19</started><ended>2014-03-31</ended></show><show><id>1023</id><name>How
+        Not To Live Your Life</name><fans>388</fans><started>2008-08-12</started><ended>2011-05-27</ended></show><show><id>2900</id><name>How
+        To Be A Gentleman</name><fans>181</fans><started>2011-09-29</started><ended>2012-06-23</ended></show><show><id>5241</id><name>How
+        To Get Away With Murder</name><fans>2951</fans><started>2014-09-25</started><ended/></show><show><id>1759</id><name>How
+        To Make It In America</name><fans>629</fans><started>2010-02-14</started><ended/></show><show><id>1701</id><name>Human
+        Target</name><fans>856</fans><started>2010-01-17</started><ended>2011-02-09</ended></show><show><id>5887</id><name>Humans</name><fans>919</fans><started/><ended/></show><show><id>1265</id><name>Hung</name><fans>1685</fans><started>2009-06-28</started><ended>2011-12-04</ended></show><show><id>3714</id><name>Hunted</name><fans>1263</fans><started>2012-10-04</started><ended>2012-11-22</ended></show><show><id>1105</id><name>Hustle</name><fans>660</fans><started>2004-02-24</started><ended>2012-02-17</ended></show><show><id>2882</id><name>I
+        Hate My Teenage Daughter</name><fans>258</fans><started>2011-11-30</started><ended>2012-03-20</ended></show><show><id>2597</id><name>Ideal</name><fans>74</fans><started>2004-12-31</started><ended>2011-05-31</ended></show><show><id>1920</id><name>Identity</name><fans>172</fans><started>2010-07-05</started><ended>2010-08-09</ended></show><show><id>103</id><name>In
+        Case Of Emergency</name><fans>15</fans><started>2007-01-03</started><ended>2007-04-11</ended></show><show><id>790</id><name>In
+        Plain Sight</name><fans>310</fans><started>2008-06-01</started><ended>2012-05-04</ended></show><show><id>4073</id><name>In
+        the Flesh</name><fans>1006</fans><started>2013-03-17</started><ended>2014-06-08</ended></show><show><id>675</id><name>In
+        Treatment</name><fans>934</fans><started>2008-01-28</started><ended/></show><show><id>3225</id><name>InSecurity</name><fans>104</fans><started>2011-01-04</started><ended>2011-12-12</ended></show><show><id>6122</id><name>Inside
+        Amy Schumer</name><fans>214</fans><started/><ended/></show><show><id>6831</id><name>Inside
+        No. 9</name><fans>60</fans><started/><ended/></show><show><id>4741</id><name>Intelligence</name><fans>1648</fans><started>2014-01-07</started><ended>2014-03-31</ended></show><show><id>6356</id><name>Into
+        The Badlands</name><fans>371</fans><started>2015-11-15</started><ended/></show><show><id>5197</id><name>Intruders</name><fans>503</fans><started>2014-08-23</started><ended>2014-10-11</ended></show><show><id>4429</id><name>Ironside</name><fans>112</fans><started>2013-10-02</started><ended>2013-10-23</ended></show><show><id>555</id><name>It''s
+        Always Sunny in Philadelphia</name><fans>597</fans><started>2005-08-04</started><ended/></show><show><id>5650</id><name>iZombie</name><fans>1391</fans><started>2015-03-17</started><ended/></show><show><id>5821</id><name>Jane
+        The Virgin</name><fans>389</fans><started>2014-10-13</started><ended/></show><show><id>349</id><name>Jekyll</name><fans>259</fans><started>2007-06-16</started><ended>2007-07-28</ended></show><show><id>105</id><name>Jericho</name><fans>1275</fans><started>2006-09-20</started><ended>2008-03-25</ended></show><show><id>110</id><name>Joey</name><fans>160</fans><started>2004-09-09</started><ended>2006-03-07</ended></show><show><id>738</id><name>John
+        Adams</name><fans>77</fans><started>2008-03-16</started><ended>2008-04-20</ended></show><show><id>351</id><name>John
+        From Cincinnati</name><fans>55</fans><started>2007-06-10</started><ended>2007-08-12</ended></show><show><id>5785</id><name>Jonathan
+        Strange &amp; Mr Norrell</name><fans>441</fans><started>2015-05-17</started><ended/></show><show><id>466</id><name>Journeyman</name><fans>272</fans><started>2007-09-24</started><ended>2007-12-19</ended></show><show><id>112</id><name>Justice</name><fans>66</fans><started>2006-08-30</started><ended>2007-12-21</ended></show><show><id>1791</id><name>Justified</name><fans>1624</fans><started>2010-03-16</started><ended>2015-04-14</ended></show><show><id>485</id><name>K-Ville</name><fans>9</fans><started>2007-09-17</started><ended>2007-12-17</ended></show><show><id>4180</id><name>Kaboul
+        Kitchen</name><fans>71</fans><started>2012-02-13</started><ended/></show><show><id>113</id><name>Kidnapped</name><fans>10</fans><started>2006-09-20</started><ended>2007-08-12</ended></show><show><id>1184</id><name>Kings</name><fans>516</fans><started>2009-03-19</started><ended>2009-07-25</ended></show><show><id>690</id><name>Knight
+        Rider</name><fans>498</fans><started>2008-09-24</started><ended>2009-03-04</ended></show><show><id>1247</id><name>Knights
+        Of Bloodsteel</name><fans>17</fans><started/><ended/></show><show><id>115</id><name>Knights
+        Of Prosperity</name><fans>5</fans><started>2007-01-03</started><ended>2007-08-08</ended></show><show><id>1238</id><name>Krod
+        Mandoon</name><fans>183</fans><started>2009-04-09</started><ended>2009-05-07</ended></show><show><id>117</id><name>Kyle
+        XY</name><fans>1402</fans><started>2006-06-26</started><ended>2009-03-16</ended></show><show><id>3304</id><name>L5</name><fans>79</fans><started/><ended/></show><show><id>861</id><name>Lab
+        Rats</name><fans>53</fans><started>2008-07-10</started><ended>0000-00-00</ended></show><show><id>3873</id><name>Labyrinth</name><fans>96</fans><started>2013-03-30</started><ended>2013-03-31</ended></show><show><id>3281</id><name>Laid</name><fans>51</fans><started>2011-02-09</started><ended/></show><show><id>1206</id><name>Lark
+        Rise To Candleford</name><fans>189</fans><started>2008-01-13</started><ended>2011-02-13</ended></show><show><id>124</id><name>Las
+        Vegas</name><fans>326</fans><started>2003-09-22</started><ended>2008-02-15</ended></show><show><id>2879</id><name>Last
+        Man Standing</name><fans>328</fans><started>2011-10-11</started><ended/></show><show><id>3576</id><name>Last
+        Resort</name><fans>2297</fans><started>2012-09-27</started><ended>2013-01-24</ended></show><show><id>2337</id><name>Law
+        &amp; Order: Los Angeles</name><fans>77</fans><started>2010-09-29</started><ended>2011-07-11</ended></show><show><id>609</id><name>Law
+        And Order SVU</name><fans>537</fans><started>1999-09-20</started><ended/></show><show><id>1179</id><name>Law
+        And Order UK</name><fans>110</fans><started>2009-02-23</started><ended>2014-06-11</ended></show><show><id>1041</id><name>Legend
+        of the Seeker</name><fans>1617</fans><started>2008-11-01</started><ended>2010-05-22</ended></show><show><id>4125</id><name>Legit</name><fans>174</fans><started>2013-01-17</started><ended>2014-05-14</ended></show><show><id>6009</id><name>Lego
+        Star Wars: Droid Tales</name><fans>74</fans><started>2015-07-06</started><ended/></show><show><id>3942</id><name>Les
+        Revenants</name><fans>1496</fans><started>0000-00-00</started><ended/></show><show><id>1063</id><name>Leverage</name><fans>2004</fans><started>2008-12-07</started><ended>2012-12-25</ended></show><show><id>1109</id><name>Lie
+        To Me</name><fans>7215</fans><started>2009-01-21</started><ended>2011-01-31</ended></show><show><id>543</id><name>Life</name><fans>1121</fans><started>2007-09-26</started><ended>2009-04-08</ended></show><show><id>573</id><name>Life
+        is Wild</name><fans>17</fans><started>2007-10-07</started><ended>2008-02-03</ended></show><show><id>126</id><name>Life
+        On Mars</name><fans>594</fans><started>2006-01-09</started><ended>2007-04-10</ended></show><show><id>847</id><name>Life
+        on Mars US</name><fans>307</fans><started>2008-10-09</started><ended>2009-04-01</ended></show><show><id>1707</id><name>Life
+        Unexpected</name><fans>1284</fans><started>2010-01-18</started><ended>2011-01-18</ended></show><show><id>3103</id><name>Life''s
+        Too Short</name><fans>297</fans><started>2011-11-05</started><ended>2013-03-30</ended></show><show><id>2334</id><name>Lights
+        Out</name><fans>466</fans><started>2011-01-11</started><ended>2011-04-05</ended></show><show><id>375</id><name>Lil''
+        Bush</name><fans>8</fans><started>2007-06-13</started><ended>2008-05-15</ended></show><show><id>6039</id><name>Lilyhammer</name><fans>71</fans><started>2012-01-25</started><ended>2014-12-17</ended></show><show><id>6143</id><name>Limitless</name><fans>2280</fans><started>2015-09-22</started><ended/></show><show><id>1781</id><name>Lingerie</name><fans>285</fans><started>2009-07-03</started><ended>2010-12-24</ended></show><show><id>2212</id><name>Lip
+        Service</name><fans>661</fans><started>2010-10-12</started><ended/></show><show><id>423</id><name>Lipstick
+        Jungle</name><fans>420</fans><started>2008-02-07</started><ended>2009-01-09</ended></show><show><id>128</id><name>Little
+        Britain</name><fans>445</fans><started>2003-09-16</started><ended>2005-11-30</ended></show><show><id>896</id><name>Little
+        Britain USA</name><fans>246</fans><started>2008-09-28</started><ended>2008-11-02</ended></show><show><id>132</id><name>Little
+        Mosque on the Prairie</name><fans>85</fans><started>2007-01-09</started><ended>2012-04-02</ended></show><show><id>6299</id><name>London
+        Spy</name><fans>221</fans><started/><ended/></show><show><id>2124</id><name>Lone
+        Star</name><fans>130</fans><started>2010-09-20</started><ended>2010-09-27</ended></show><show><id>4152</id><name>Longmire</name><fans>302</fans><started>2012-06-03</started><ended/></show><show><id>4759</id><name>Looking</name><fans>788</fans><started>2014-01-19</started><ended/></show><show><id>134</id><name>Lost</name><fans>18411</fans><started>2004-09-22</started><ended>2010-05-23</ended></show><show><id>2734</id><name>Louie</name><fans>1213</fans><started>2010-06-29</started><ended/></show><show><id>2589</id><name>Love
+        Bites</name><fans>245</fans><started>2011-06-02</started><ended>2011-07-21</ended></show><show><id>4369</id><name>Low
+        Winter Sun</name><fans>455</fans><started>2013-08-11</started><ended>2013-10-06</ended></show><show><id>6518</id><name>Lucifer</name><fans>1301</fans><started>2016-01-25</started><ended/></show><show><id>3120</id><name>Luck</name><fans>689</fans><started>2011-12-11</started><ended>2012-03-25</ended></show><show><id>4476</id><name>Lucky
+        7</name><fans>101</fans><started>2013-09-24</started><ended>2013-10-01</ended></show><show><id>141</id><name>Lucky
+        Louie</name><fans>89</fans><started>2006-06-11</started><ended>2006-08-27</ended></show><show><id>1633</id><name>Lumina</name><fans>36</fans><started/><ended/></show><show><id>1823</id><name>Luther</name><fans>2735</fans><started>2010-05-04</started><ended/></show><show><id>2459</id><name>Mad
+        Love</name><fans>628</fans><started>2011-02-21</started><ended>2011-05-15</ended></show><show><id>442</id><name>Mad
+        Men</name><fans>4537</fans><started>2007-07-19</started><ended>2015-05-17</ended></show><show><id>3534</id><name>Major
+        Crimes</name><fans>527</fans><started>2012-08-13</started><ended/></show><show><id>1335</id><name>Make
+        It Or Break It</name><fans>1868</fans><started>2009-06-22</started><ended>2012-05-14</ended></show><show><id>1405</id><name>Malviviendo</name><fans>147</fans><started/><ended/></show><show><id>5588</id><name>Man
+        Seeking Woman</name><fans>635</fans><started/><ended/></show><show><id>5164</id><name>Manhattan</name><fans>842</fans><started>2014-07-27</started><ended/></show><show><id>5382</id><name>Manhattan
+        Love Story</name><fans>340</fans><started/><ended/></show><show><id>5654</id><name>Mapp
+        and Lucia</name><fans>33</fans><started/><ended/></show><show><id>6861</id><name>Marcella</name><fans>74</fans><started/><ended/></show><show><id>1324</id><name>Martina
+        Cole''s The Take</name><fans>71</fans><started>2009-06-17</started><ended>2009-06-30</ended></show><show><id>5495</id><name>Marvel''s
+        Agent Carter</name><fans>2973</fans><started>2015-01-06</started><ended/></show><show><id>4430</id><name>Marvel''s
+        Agents of S.H.I.E.L.D.</name><fans>7435</fans><started>2013-09-24</started><ended/></show><show><id>5668</id><name>Marvel''s
+        Daredevil</name><fans>4322</fans><started>2015-04-10</started><ended/></show><show><id>6372</id><name>Marvel''s
+        Jessica Jones</name><fans>1925</fans><started>2015-11-20</started><ended>2015-11-20</ended></show><show><id>6803</id><name>Master
+        Of None</name><fans>40</fans><started/><ended/></show><show><id>143</id><name>Masters
+        Of Horror</name><fans>232</fans><started>2005-10-28</started><ended>2007-02-02</ended></show><show><id>414</id><name>Masters
+        Of Science Fiction</name><fans>99</fans><started>2007-08-04</started><ended>2012-03-11</ended></show><show><id>4391</id><name>Masters
+        of Sex</name><fans>3083</fans><started>2013-09-29</started><ended/></show><show><id>1316</id><name>May
+        Contain Nuts</name><fans>34</fans><started>2009-06-11</started><ended>2009-06-18</ended></show><show><id>347</id><name>Meadowlands</name><fans>28</fans><started>2007-07-10</started><ended>2007-08-28</ended></show><show><id>145</id><name>Medium</name><fans>759</fans><started>2005-01-03</started><ended>2011-01-21</ended></show><show><id>1407</id><name>Melrose
+        Place</name><fans>829</fans><started>2009-09-08</started><ended>2010-04-13</ended></show><show><id>1679</id><name>Men
+        of a Certain Age</name><fans>226</fans><started>2009-12-07</started><ended>2011-07-06</ended></show><show><id>1508</id><name>Mercy</name><fans>337</fans><started>2009-09-23</started><ended>2010-05-12</ended></show><show><id>927</id><name>Merlin</name><fans>3511</fans><started>2008-09-20</started><ended>2012-12-24</ended></show><show><id>1665</id><name>Merlin:
+        Secrets And Magic</name><fans>136</fans><started/><ended/></show><show><id>756</id><name>Metalocalypse</name><fans>239</fans><started>2006-08-06</started><ended/></show><show><id>1260</id><name>Meteor:
+        Path to Destruction</name><fans>62</fans><started>2009-07-12</started><ended>2009-07-19</ended></show><show><id>1784</id><name>Miami
+        Medical</name><fans>268</fans><started>2010-04-02</started><ended>2010-07-02</ended></show><show><id>770</id><name>Midnight
+        Man</name><fans>25</fans><started>2008-05-08</started><ended>2008-05-22</ended></show><show><id>2153</id><name>Mike
+        &amp; Molly</name><fans>945</fans><started>2010-09-20</started><ended/></show><show><id>2512</id><name>Mildred
+        Pierce</name><fans>333</fans><started>2011-03-27</started><ended>2011-04-10</ended></show><show><id>4852</id><name>Mind
+        Games</name><fans>174</fans><started>2014-02-25</started><ended>2014-03-25</ended></show><show><id>6058</id><name>Minority
+        Report</name><fans>957</fans><started>2015-08-10</started><ended/></show><show><id>1669</id><name>Misfits</name><fans>8594</fans><started>2009-11-12</started><ended>2013-12-11</ended></show><show><id>3308</id><name>Miss
+        Fisher''s Murder Mysteries</name><fans>365</fans><started>2012-02-24</started><ended/></show><show><id>729</id><name>Miss
+        Guided</name><fans>17</fans><started>2008-03-18</started><ended>2008-04-03</ended></show><show><id>710</id><name>Mistresses</name><fans>278</fans><started>2008-01-08</started><ended>2010-08-26</ended></show><show><id>4194</id><name>Mistresses
+        US</name><fans>971</fans><started>2013-06-03</started><ended/></show><show><id>3814</id><name>Mockingbird
+        Lane</name><fans>65</fans><started>2012-10-26</started><ended/></show><show><id>1432</id><name>Modern
+        Family</name><fans>5357</fans><started>2009-09-23</started><ended/></show><show><id>858</id><name>Monk</name><fans>265</fans><started>2002-07-12</started><ended>2009-12-04</ended></show><show><id>2586</id><name>Monroe</name><fans>196</fans><started>2011-03-10</started><ended>2012-11-05</ended></show><show><id>5181</id><name>Moone
+        Boy</name><fans>97</fans><started>2012-09-14</started><ended>2015-04-06</ended></show><show><id>537</id><name>Moonlight</name><fans>764</fans><started>2007-09-28</started><ended>2008-05-16</ended></show><show><id>2551</id><name>Mortal
+        Kombat: Legacy</name><fans>480</fans><started>2011-04-12</started><ended/></show><show><id>5496</id><name>Mozart
+        in the Jungle</name><fans>908</fans><started>2014-12-23</started><ended/></show><show><id>5881</id><name>Mr.
+        Robot</name><fans>4645</fans><started>2015-06-24</started><ended/></show><show><id>2441</id><name>Mr.
+        Sunshine</name><fans>406</fans><started>2011-02-09</started><ended>2011-04-06</ended></show><show><id>1279</id><name>Mumbai
+        Calling</name><fans>77</fans><started>2009-05-30</started><ended>2009-07-11</ended></show><show><id>2090</id><name>My
+        Generation</name><fans>58</fans><started>2010-09-23</started><ended>2010-09-30</ended></show><show><id>147</id><name>My
+        Name Is Earl</name><fans>2736</fans><started>2005-09-20</started><ended>2009-05-14</ended></show><show><id>1013</id><name>My
+        Own Worst Enemy</name><fans>178</fans><started>2008-10-13</started><ended>2008-12-15</ended></show><show><id>6052</id><name>Narcos</name><fans>1873</fans><started>2015-08-28</started><ended/></show><show><id>3882</id><name>Nashville</name><fans>735</fans><started>2012-10-10</started><ended/></show><show><id>157</id><name>NCIS</name><fans>3611</fans><started>2003-09-23</started><ended/></show><show><id>1394</id><name>NCIS:
+        Los Angeles</name><fans>1946</fans><started>2009-09-22</started><ended/></show><show><id>5233</id><name>NCIS:
+        New Orleans</name><fans>489</fans><started>2014-09-23</started><ended/></show><show><id>3133</id><name>Neverland</name><fans>174</fans><started>2011-12-04</started><ended>2011-12-05</ended></show><show><id>1745</id><name>Neverwhere</name><fans>196</fans><started>1996-08-31</started><ended>1996-09-30</ended></show><show><id>713</id><name>New
+        Amsterdam</name><fans>156</fans><started>2008-03-10</started><ended>2008-04-14</ended></show><show><id>2876</id><name>New
+        Girl</name><fans>8881</fans><started>2011-09-20</started><ended/></show><show><id>159</id><name>Nightmare
+        &amp; Dreamscapes</name><fans>49</fans><started>2006-07-12</started><ended>2006-08-02</ended></show><show><id>2029</id><name>Nikita</name><fans>2646</fans><started>2010-09-09</started><ended>2013-12-27</ended></show><show><id>162</id><name>Nip/Tuck</name><fans>2692</fans><started>2003-07-22</started><ended>2010-03-03</ended></show><show><id>925</id><name>No
+        Heroics</name><fans>150</fans><started>2008-09-18</started><ended>2008-10-23</ended></show><show><id>5816</id><name>No
+        Offence</name><fans>161</fans><started/><ended/></show><show><id>1996</id><name>No
+        Ordinary Family</name><fans>2178</fans><started>2010-09-28</started><ended>2011-04-05</ended></show><show><id>2768</id><name>NTSF:SD:SUV::</name><fans>365</fans><started>2011-07-22</started><ended/></show><show><id>336</id><name>Numb3rs</name><fans>1055</fans><started>2005-01-23</started><ended>2010-03-12</ended></show><show><id>1271</id><name>Nurse
+        Jackie</name><fans>1188</fans><started>2009-06-08</started><ended>2015-06-28</ended></show><show><id>1313</id><name>Occupation</name><fans>78</fans><started>2009-06-16</started><ended>2009-06-18</ended></show><show><id>164</id><name>October
+        Road</name><fans>330</fans><started>2007-03-15</started><ended>2008-03-10</ended></show><show><id>2526</id><name>Off
+        the Map</name><fans>262</fans><started>2011-01-12</started><ended>2011-04-06</ended></show><show><id>5422</id><name>Olive
+        Kitteridge</name><fans>229</fans><started/><ended/></show><show><id>3042</id><name>Once
+        Upon A Time</name><fans>10432</fans><started>2011-10-23</started><ended/></show><show><id>4513</id><name>Once
+        Upon a Time in Wonderland</name><fans>1718</fans><started>2013-10-10</started><ended>2014-04-03</ended></show><show><id>5694</id><name>One
+        Big Happy</name><fans>108</fans><started/><ended/></show><show><id>167</id><name>One
+        Tree Hill</name><fans>2892</fans><started>2003-09-23</started><ended>2012-04-04</ended></show><show><id>4331</id><name>Orange
+        Is The New Black</name><fans>4640</fans><started>2013-07-11</started><ended/></show><show><id>4088</id><name>Orphan
+        Black</name><fans>3181</fans><started>2013-03-30</started><ended/></show><show><id>2435</id><name>Outcasts</name><fans>725</fans><started>2011-02-07</started><ended>2011-03-13</ended></show><show><id>5175</id><name>Outlander</name><fans>1999</fans><started>2014-08-09</started><ended/></show><show><id>2138</id><name>Outsourced</name><fans>424</fans><started>2010-09-23</started><ended>2011-05-12</ended></show><show><id>169</id><name>Oz</name><fans>966</fans><started>1997-07-12</started><ended>2003-02-23</ended></show><show><id>172</id><name>Painkiller
+        Jane</name><fans>58</fans><started>2007-04-13</started><ended>2007-09-21</ended></show><show><id>2872</id><name>Pan
+        Am</name><fans>1391</fans><started>2011-09-25</started><ended>2012-02-19</ended></show><show><id>3541</id><name>Parade''s
+        End</name><fans>391</fans><started>2012-08-24</started><ended>2012-09-21</ended></show><show><id>1636</id><name>Paradox</name><fans>529</fans><started>2009-10-31</started><ended>2009-10-31</ended></show><show><id>1710</id><name>Parenthood</name><fans>1556</fans><started>2010-03-02</started><ended>2015-01-29</ended></show><show><id>1212</id><name>Parks
+        and Recreation</name><fans>1730</fans><started>2009-04-09</started><ended>2015-02-24</ended></show><show><id>1189</id><name>Party
+        Down</name><fans>257</fans><started>2009-03-20</started><ended>2010-06-25</ended></show><show><id>1704</id><name>Past
+        Life</name><fans>109</fans><started>2010-02-09</started><ended>2010-06-04</ended></show><show><id>5595</id><name>Peaky
+        Blinders</name><fans>625</fans><started/><ended/></show><show><id>4935</id><name>Penny
+        Dreadful</name><fans>3028</fans><started>2014-05-11</started><ended/></show><show><id>2856</id><name>Person
+        Of Interest</name><fans>8868</fans><started>2011-09-22</started><ended/></show><show><id>1864</id><name>Persons
+        Unknown</name><fans>2291</fans><started>2010-06-07</started><ended>2010-08-28</ended></show><show><id>1888</id><name>Pioneer
+        One</name><fans>531</fans><started>2010-06-17</started><ended>2011-12-13</ended></show><show><id>5277</id><name>Play
+        It Again Dick</name><fans>116</fans><started>2014-09-16</started><ended/></show><show><id>4260</id><name>Please
+        Like Me</name><fans>247</fans><started>2013-02-28</started><ended/></show><show><id>4174</id><name>Plebs</name><fans>238</fans><started>2013-03-25</started><ended/></show><show><id>1132</id><name>Plus
+        One</name><fans>70</fans><started>2009-01-09</started><ended>2009-02-06</ended></show><show><id>3509</id><name>Political
+        Animals</name><fans>268</fans><started>2012-07-15</started><ended>2012-08-19</ended></show><show><id>2423</id><name>Portlandia</name><fans>266</fans><started>2011-01-21</started><ended/></show><show><id>6171</id><name>Powers</name><fans>175</fans><started>2015-03-10</started><ended>2015-04-28</ended></show><show><id>1840</id><name>Pretty
+        Little Liars</name><fans>5802</fans><started>2010-06-08</started><ended/></show><show><id>1330</id><name>Pride
+        and Prejudice</name><fans>411</fans><started>1996-01-14</started><ended>1996-02-06</ended></show><show><id>174</id><name>Primeval</name><fans>799</fans><started>2007-02-10</started><ended/></show><show><id>3826</id><name>Primeval:
+        New World</name><fans>399</fans><started>2012-10-29</started><ended>2013-02-19</ended></show><show><id>176</id><name>Prison
+        Break</name><fans>5857</fans><started>2005-08-29</started><ended/></show><show><id>3272</id><name>Prisoners
+        Wives</name><fans>119</fans><started>2012-01-31</started><ended/></show><show><id>499</id><name>Private
+        Practice</name><fans>3048</fans><started>2007-09-26</started><ended>2013-01-22</ended></show><show><id>898</id><name>Privileged</name><fans>447</fans><started>2008-09-09</started><ended>2009-02-24</ended></show><show><id>179</id><name>Psych</name><fans>926</fans><started>2006-07-07</started><ended>2014-03-26</ended></show><show><id>1328</id><name>Psychoville</name><fans>896</fans><started>2009-06-18</started><ended/></show><show><id>3213</id><name>Public
+        Enemies</name><fans>49</fans><started>2012-01-04</started><ended>0000-00-00</ended></show><show><id>1861</id><name>Pulse</name><fans>90</fans><started>2010-06-03</started><ended>2010-06-03</ended></show><show><id>395</id><name>Pushing
+        Daisies</name><fans>1177</fans><started>2007-10-03</started><ended>2009-06-13</ended></show><show><id>2568</id><name>Queer
+        As Folk US</name><fans>557</fans><started>2000-12-03</started><ended>2005-08-07</ended></show><show><id>181</id><name>Raines</name><fans>28</fans><started>2007-03-15</started><ended>2007-04-27</ended></show><show><id>2040</id><name>Raising
+        Hope</name><fans>1892</fans><started>2010-09-21</started><ended>2014-04-04</ended></show><show><id>845</id><name>Raising
+        the Bar</name><fans>145</fans><started>2008-09-01</started><ended>2009-12-24</ended></show><show><id>4589</id><name>Ravenswood</name><fans>703</fans><started>2013-10-22</started><ended>2014-02-04</ended></show><show><id>4323</id><name>Ray
+        Donovan</name><fans>332</fans><started>2013-06-30</started><ended/></show><show><id>401</id><name>Reaper</name><fans>1749</fans><started>2007-09-25</started><ended>2009-05-26</ended></show><show><id>4161</id><name>Rectify</name><fans>949</fans><started>2013-04-22</started><ended/></show><show><id>6257</id><name>Red
+        Oaks</name><fans>113</fans><started>2015-10-09</started><ended/></show><show><id>1192</id><name>Red
+        Riding</name><fans>97</fans><started>2009-03-05</started><ended>2009-03-19</ended></show><show><id>5516</id><name>Remember
+        Me</name><fans>102</fans><started/><ended/></show><show><id>3136</id><name>Resident
+        Evil: First Hour</name><fans>137</fans><started/><ended/></show><show><id>4904</id><name>Resurrection</name><fans>819</fans><started>2014-03-09</started><ended>2015-01-25</ended></show><show><id>2869</id><name>Revenge</name><fans>5282</fans><started>2011-09-21</started><ended>2015-05-10</ended></show><show><id>3566</id><name>Revolution</name><fans>5817</fans><started>2012-09-17</started><ended>2014-05-21</ended></show><show><id>4521</id><name>Rewind</name><fans>2</fans><started>2013-08-26</started><ended/></show><show><id>2257</id><name>Riese:
+        Kingdom Falling</name><fans>243</fans><started/><ended/></show><show><id>2795</id><name>Ringer</name><fans>2018</fans><started>2011-09-13</started><ended>2012-04-17</ended></show><show><id>3892</id><name>Ripper
+        Street</name><fans>1420</fans><started>2012-12-30</started><ended/></show><show><id>1787</id><name>Riverworld</name><fans>68</fans><started>2010-04-18</started><ended/></show><show><id>2499</id><name>Rizzoli
+        &amp; Isles</name><fans>1518</fans><started>2010-07-12</started><ended/></show><show><id>2260</id><name>Robert
+        Schimmel</name><fans>15</fans><started/><ended/></show><show><id>183</id><name>Robot
+        Chicken</name><fans>297</fans><started>2005-02-20</started><ended/></show><show><id>1798</id><name>Romantically
+        Challenged</name><fans>129</fans><started>2010-04-19</started><ended>2010-05-17</ended></show><show><id>186</id><name>Rome</name><fans>632</fans><started>2005-08-28</started><ended>2007-03-25</ended></show><show><id>1288</id><name>Roommates</name><fans>251</fans><started>2009-03-23</started><ended>2009-05-04</ended></show><show><id>1282</id><name>Royal
+        Pains</name><fans>1834</fans><started>2009-06-04</started><ended/></show><show><id>1869</id><name>Rubicon</name><fans>1506</fans><started>2010-06-13</started><ended>2010-10-17</ended></show><show><id>470</id><name>Rules
+        of Engagement</name><fans>400</fans><started>2007-02-05</started><ended>2013-05-20</ended></show><show><id>2053</id><name>Running
+        Wilde</name><fans>190</fans><started>2010-09-21</started><ended>2011-05-21</ended></show><show><id>5005</id><name>Russell
+        Peters</name><fans>1</fans><started/><ended/></show><show><id>588</id><name>Samantha
+        Who?</name><fans>700</fans><started>2007-10-15</started><ended>2009-07-23</ended></show><show><id>190</id><name>Sanctuary</name><fans>1580</fans><started>2008-10-03</started><ended>2011-12-30</ended></show><show><id>4757</id><name>Sarah
+        Silverman: We Are Miracles</name><fans>2</fans><started>2013-11-23</started><ended/></show><show><id>2453</id><name>Saturday
+        Night Live</name><fans>283</fans><started>1975-10-11</started><ended/></show><show><id>4209</id><name>Save
+        Me</name><fans>48</fans><started>2013-05-23</started><ended>2013-06-13</ended></show><show><id>455</id><name>Saving
+        Grace</name><fans>218</fans><started>2007-07-23</started><ended>2010-06-21</ended></show><show><id>3756</id><name>Scandal</name><fans>2296</fans><started>2012-04-05</started><ended/></show><show><id>4077</id><name>School
+        Of Thrones</name><fans>173</fans><started/><ended/></show><show><id>6194</id><name>Scream
+        Queens</name><fans>659</fans><started>2015-09-22</started><ended/></show><show><id>192</id><name>Scrubs</name><fans>7262</fans><started>2001-10-02</started><ended>2010-03-17</ended></show><show><id>4509</id><name>Sean
+        saves the world</name><fans>133</fans><started>2013-10-03</started><ended>2014-01-31</ended></show><show><id>599</id><name>Secret
+        Diary Of A Call Girl</name><fans>1729</fans><started>2007-09-27</started><ended>2011-03-22</ended></show><show><id>1595</id><name>Secret
+        Girlfriend</name><fans>207</fans><started>2009-10-07</started><ended>2009-11-09</ended></show><show><id>3853</id><name>Secret
+        State</name><fans>180</fans><started>2012-11-07</started><ended>2012-11-28</ended></show><show><id>5189</id><name>Selfie</name><fans>587</fans><started>2014-09-30</started><ended/></show><show><id>1644</id><name>Sense
+        and Sensibility</name><fans>191</fans><started>2008-01-01</started><ended>2008-01-13</ended></show><show><id>5781</id><name>Sense8</name><fans>2306</fans><started>2015-06-05</started><ended/></show><show><id>5924</id><name>Sex&amp;Drugs&amp;Rock&amp;Roll</name><fans>231</fans><started/><ended/></show><show><id>6499</id><name>Shadowhunters</name><fans>697</fans><started>2016-01-12</started><ended/></show><show><id>2347</id><name>Shameless
+        US</name><fans>4929</fans><started>2011-01-09</started><ended/></show><show><id>196</id><name>Shark</name><fans>158</fans><started>2006-09-21</started><ended>2008-05-20</ended></show><show><id>1961</id><name>Sherlock</name><fans>12360</fans><started>2010-07-25</started><ended/></show><show><id>6021</id><name>Show
+        Me a Hero</name><fans>322</fans><started>2015-08-16</started><ended/></show><show><id>4947</id><name>Silicon
+        Valley</name><fans>2576</fans><started>2014-04-06</started><ended/></show><show><id>2454</id><name>Silk</name><fans>267</fans><started>2011-02-22</started><ended/></show><show><id>767</id><name>Sin
+        Tetas No Hay Paraiso</name><fans>56</fans><started/><ended/></show><show><id>2197</id><name>Single
+        Father</name><fans>183</fans><started>2010-10-10</started><ended>2010-10-31</ended></show><show><id>2683</id><name>Single
+        Ladies</name><fans>138</fans><started>2011-05-30</started><ended/></show><show><id>2776</id><name>Sirens</name><fans>374</fans><started>2011-06-27</started><ended>2011-08-01</ended></show><show><id>1242</id><name>Sit
+        Down, Shut Up</name><fans>9</fans><started>2009-04-19</started><ended>2009-11-21</ended></show><show><id>198</id><name>Six
+        Feet Under</name><fans>1908</fans><started>2001-06-03</started><ended>2005-08-21</ended></show><show><id>613</id><name>Skins</name><fans>3363</fans><started>2007-01-25</started><ended>2013-08-08</ended></show><show><id>2363</id><name>Skins
+        US</name><fans>350</fans><started>2011-01-17</started><ended>2011-03-23</ended></show><show><id>200</id><name>Sleeper
+        Cell</name><fans>65</fans><started>2005-12-04</started><ended>2006-12-17</ended></show><show><id>4387</id><name>Sleepy
+        Hollow</name><fans>3574</fans><started>2013-09-16</started><ended/></show><show><id>202</id><name>Smallville</name><fans>4579</fans><started>2001-10-16</started><ended>2011-05-13</ended></show><show><id>3252</id><name>Smash</name><fans>979</fans><started>2012-02-06</started><ended>2013-05-26</ended></show><show><id>209</id><name>Smith</name><fans>13</fans><started>2006-09-19</started><ended>2006-10-03</ended></show><show><id>6029</id><name>Sneaky
+        Pete</name><fans>289</fans><started/><ended/></show><show><id>2491</id><name>Solo</name><fans>43</fans><started/><ended/></show><show><id>3864</id><name>Some
+        Girls</name><fans>145</fans><started>2012-11-06</started><ended/></show><show><id>5395</id><name>Sonic
+        Highways</name><fans>432</fans><started/><ended/></show><show><id>891</id><name>Sons
+        of Anarchy</name><fans>5453</fans><started>2008-09-03</started><ended>2014-12-09</ended></show><show><id>664</id><name>Sophie</name><fans>24</fans><started>2008-01-09</started><ended>2009-03-23</ended></show><show><id>211</id><name>South
+        Of Nowhere</name><fans>156</fans><started>2005-11-04</started><ended>2008-12-12</ended></show><show><id>214</id><name>South
+        Park</name><fans>3812</fans><started>1997-08-13</started><ended/></show><show><id>5643</id><name>Southcliffe</name><fans>81</fans><started/><ended/></show><show><id>1227</id><name>Southland</name><fans>485</fans><started>2009-04-09</started><ended>2013-04-17</ended></show><show><id>638</id><name>Space:
+        Above &amp; Beyond</name><fans>116</fans><started>1995-09-24</started><ended>1996-06-02</ended></show><show><id>1672</id><name>Spartacus:
+        Blood and Sand</name><fans>4035</fans><started>2010-01-22</started><ended>0000-00-00</ended></show><show><id>2374</id><name>Spartacus:
+        Gods Of The Arena</name><fans>3677</fans><started>2011-01-21</started><ended>2011-02-25</ended></show><show><id>3228</id><name>Spartacus:
+        Vengeance</name><fans>3835</fans><started>2010-01-22</started><ended>2013-04-12</ended></show><show><id>4008</id><name>Spartacus:
+        War of the Damned</name><fans>2616</fans><started/><ended/></show><show><id>1043</id><name>Speciali</name><fans>0</fans><started/><ended/></show><show><id>3990</id><name>Spies
+        of Warsaw</name><fans>136</fans><started>2013-01-09</started><ended>2013-01-16</ended></show><show><id>5025</id><name>Spooked</name><fans>40</fans><started/><ended/></show><show><id>864</id><name>Spooks:
+        Code 9</name><fans>44</fans><started>2008-08-10</started><ended>2008-09-07</ended></show><show><id>1821</id><name>Sports
+        Night</name><fans>136</fans><started>1998-09-22</started><ended>2000-05-16</ended></show><show><id>5304</id><name>Stalker</name><fans>519</fans><started>2014-10-01</started><ended/></show><show><id>1075</id><name>Star
+        Trek</name><fans>391</fans><started/><ended/></show><show><id>5332</id><name>Star
+        Wars Rebels</name><fans>638</fans><started/><ended/></show><show><id>4788</id><name>Star-Crossed</name><fans>579</fans><started>2014-02-17</started><ended>2014-05-12</ended></show><show><id>217</id><name>Stargate
+        Atlantis</name><fans>613</fans><started>2004-07-16</started><ended>2009-01-09</ended></show><show><id>220</id><name>Stargate
+        SG1</name><fans>703</fans><started>1997-07-27</started><ended>2007-03-13</ended></show><show><id>1426</id><name>Stargate
+        Universe</name><fans>2184</fans><started>2009-10-02</started><ended>2011-05-09</ended></show><show><id>223</id><name>Studio
+        60 On The Sunset Strip</name><fans>230</fans><started>2006-09-18</started><ended>2007-06-28</ended></show><show><id>2980</id><name>Suburgatory</name><fans>1824</fans><started>2011-09-28</started><ended>2014-05-14</ended></show><show><id>479</id><name>Sugar
+        Rush</name><fans>122</fans><started>2005-05-31</started><ended>2006-07-31</ended></show><show><id>2746</id><name>Suits</name><fans>5036</fans><started>2011-06-23</started><ended/></show><show><id>5815</id><name>Supergirl</name><fans>1404</fans><started>2015-10-26</started><ended/></show><show><id>224</id><name>Supernatural</name><fans>9257</fans><started>2005-09-13</started><ended/></show><show><id>5782</id><name>Supreme
+        Tweeter</name><fans>13</fans><started/><ended/></show><show><id>1054</id><name>Survivors</name><fans>932</fans><started>2008-11-23</started><ended>2010-02-23</ended></show><show><id>4662</id><name>Susan
+        313</name><fans>0</fans><started>2013-10-22</started><ended/></show><show><id>793</id><name>Swingtown</name><fans>101</fans><started>2008-06-05</started><ended>2008-09-05</ended></show><show><id>2601</id><name>Switched
+        At Birth</name><fans>1052</fans><started>2011-06-06</started><ended/></show><show><id>1931</id><name>Tales
+        From The Crypt</name><fans>237</fans><started>1989-06-10</started><ended>1996-07-19</ended></show><show><id>5730</id><name>Tatau</name><fans>61</fans><started/><ended/></show><show><id>2666</id><name>Teen
+        Wolf</name><fans>3430</fans><started>2011-06-05</started><ended/></show><show><id>3797</id><name>Teenage
+        Mutant Ninja Turtles 2012</name><fans>89</fans><started>2012-09-29</started><ended/></show><show><id>494</id><name>Tell
+        Me You Love Me</name><fans>136</fans><started>2007-09-09</started><ended>2007-11-11</ended></show><show><id>390</id><name>Terminator:
+        The Sarah Connor Chronicles</name><fans>1822</fans><started>2008-01-13</started><ended>2009-04-10</ended></show><show><id>2967</id><name>Terra
+        Nova</name><fans>4457</fans><started>2011-09-26</started><ended>2011-12-19</ended></show><show><id>2312</id><name>Terriers</name><fans>332</fans><started>2010-09-08</started><ended>2010-12-01</ended></show><show><id>1852</id><name>Terry
+        Pratchett''s Going Postal</name><fans>172</fans><started>2010-05-30</started><ended>2010-05-31</ended></show><show><id>779</id><name>Terry
+        Pratchett''s Hogfather</name><fans>167</fans><started>2006-12-17</started><ended>2006-12-18</ended></show><show><id>754</id><name>Terry
+        Pratchett''s The Colour Of Magic</name><fans>177</fans><started>2008-03-23</started><ended>2008-03-24</ended></show><show><id>736</id><name>That''s
+        Amore</name><fans>17</fans><started/><ended/></show><show><id>4895</id><name>The
+        100</name><fans>3823</fans><started>2014-03-19</started><ended/></show><show><id>225</id><name>The
+        4400</name><fans>862</fans><started>2004-07-11</started><ended>2007-09-16</ended></show><show><id>6799</id><name>The
+        A Word</name><fans>75</fans><started/><ended/></show><show><id>5373</id><name>The
+        Affair</name><fans>1571</fans><started>2014-10-12</started><ended/></show><show><id>643</id><name>The
+        Amazing Race</name><fans>131</fans><started>2001-09-05</started><ended/></show><show><id>3984</id><name>The
+        Americans</name><fans>3518</fans><started>2013-01-30</started><ended/></show><show><id>2240</id><name>The
+        Avengers: Earth''s Mightiest Heroes</name><fans>274</fans><started>2010-10-20</started><ended>2013-05-05</ended></show><show><id>6153</id><name>The
+        Bastard Executioner</name><fans>451</fans><started>2015-09-16</started><ended/></show><show><id>1107</id><name>The
+        Beast</name><fans>160</fans><started>2009-01-15</started><ended>2009-04-23</ended></show><show><id>1518</id><name>The
+        Beautiful Life</name><fans>279</fans><started>2009-09-16</started><ended>2009-09-23</ended></show><show><id>399</id><name>The
+        Big Bang Theory</name><fans>24907</fans><started>2007-09-24</started><ended/></show><show><id>1973</id><name>The
+        Big C</name><fans>1133</fans><started>2010-08-16</started><ended>2013-05-20</ended></show><show><id>229</id><name>The
+        Black Donnellys</name><fans>290</fans><started>2007-02-26</started><ended>2007-04-02</ended></show><show><id>4383</id><name>The
+        Blacklist</name><fans>3822</fans><started>2013-09-23</started><ended/></show><show><id>2506</id><name>The
+        Borgias</name><fans>2102</fans><started>2011-04-03</started><ended>2013-06-16</ended></show><show><id>4310</id><name>The
+        Bridge</name><fans>1813</fans><started>2013-07-10</started><ended>2014-10-01</ended></show><show><id>5898</id><name>The
+        Brink</name><fans>716</fans><started/><ended/></show><show><id>2295</id><name>The
+        Cape</name><fans>1227</fans><started>2011-01-09</started><ended>2011-02-28</ended></show><show><id>3981</id><name>The
+        Carrie Diaries</name><fans>1421</fans><started>2013-01-14</started><ended>2014-01-31</ended></show><show><id>5617</id><name>The
+        Casual Vacancy</name><fans>213</fans><started>2015-02-15</started><ended>2015-03-01</ended></show><show><id>2404</id><name>The
+        Chicago Code</name><fans>583</fans><started>2011-02-07</started><ended>2011-05-23</ended></show><show><id>232</id><name>The
+        Class</name><fans>31</fans><started>2006-09-18</started><ended>2007-03-05</ended></show><show><id>829</id><name>The
+        Cleaner</name><fans>123</fans><started>2008-07-15</started><ended>2009-09-15</ended></show><show><id>1354</id><name>The
+        Cleveland Show</name><fans>1736</fans><started>2009-09-27</started><ended>2013-05-19</ended></show><show><id>960</id><name>The
+        Clone Wars</name><fans>1172</fans><started>2008-10-03</started><ended>2014-03-07</ended></show><show><id>339</id><name>The
+        Closer</name><fans>810</fans><started>2005-06-13</started><ended>2012-08-13</ended></show><show><id>5388</id><name>The
+        Comeback</name><fans>26</fans><started/><ended/></show><show><id>473</id><name>The
+        Company</name><fans>16</fans><started>2007-08-05</started><ended>2007-08-19</ended></show><show><id>4446</id><name>The
+        Crazy Ones</name><fans>1391</fans><started>2013-09-26</started><ended>2014-04-17</ended></show><show><id>2532</id><name>The
+        Crimson Petal And The White</name><fans>300</fans><started>2011-04-06</started><ended>2011-04-27</ended></show><show><id>1682</id><name>The
+        Day Of The Triffids</name><fans>74</fans><started>2009-12-28</started><ended>2009-12-29</ended></show><show><id>234</id><name>The
+        Dead Zone</name><fans>197</fans><started>2002-06-16</started><ended>2007-09-16</ended></show><show><id>3354</id><name>The
+        Deep</name><fans>161</fans><started>2010-08-03</started><ended>2010-08-31</ended></show><show><id>1738</id><name>The
+        Deep End</name><fans>59</fans><started>2010-01-21</started><ended>2010-02-25</ended></show><show><id>2046</id><name>The
+        Defenders</name><fans>512</fans><started>2010-09-22</started><ended>2011-03-11</ended></show><show><id>1093</id><name>The
+        Diary Of Anne Frank</name><fans>46</fans><started>2009-01-05</started><ended>2009-01-09</ended></show><show><id>237</id><name>The
+        Dresden Files</name><fans>181</fans><started>2007-01-21</started><ended>2007-04-15</ended></show><show><id>5442</id><name>The
+        Driver</name><fans>99</fans><started/><ended/></show><show><id>5947</id><name>The
+        Enfield Haunting</name><fans>91</fans><started/><ended/></show><show><id>2068</id><name>The
+        Event</name><fans>3469</fans><started>2010-09-20</started><ended>2011-05-23</ended></show><show><id>998</id><name>The
+        Ex List</name><fans>178</fans><started>2008-10-03</started><ended>2008-10-24</ended></show><show><id>6437</id><name>The
+        Expanse</name><fans>1328</fans><started>2015-11-23</started><ended/></show><show><id>3003</id><name>The
+        Fades</name><fans>748</fans><started>2011-09-21</started><ended>2011-10-26</ended></show><show><id>4167</id><name>The
+        Fall</name><fans>1659</fans><started>2013-05-13</started><ended/></show><show><id>3907</id><name>The
+        Fear</name><fans>110</fans><started>2012-12-03</started><ended/></show><show><id>3139</id><name>The
+        Finder</name><fans>668</fans><started>2012-01-12</started><ended>2012-05-11</ended></show><show><id>3163</id><name>The
+        Firm</name><fans>544</fans><started>2012-01-08</started><ended>2012-07-14</ended></show><show><id>5082</id><name>The
+        Flash</name><fans>5614</fans><started>2014-10-07</started><ended/></show><show><id>3930</id><name>The
+        Following</name><fans>5337</fans><started>2013-01-21</started><ended>2015-05-18</ended></show><show><id>1535</id><name>The
+        Forgotten</name><fans>349</fans><started>2009-09-22</started><ended>2010-07-03</ended></show><show><id>1837</id><name>The
+        Gates</name><fans>826</fans><started>2010-06-20</started><ended>2010-09-19</ended></show><show><id>2661</id><name>The
+        Glee Project</name><fans>286</fans><started>2011-06-12</started><ended>2012-08-14</ended></show><show><id>4420</id><name>The
+        Goldbergs</name><fans>255</fans><started>2013-09-24</started><ended/></show><show><id>1397</id><name>The
+        Good Wife</name><fans>3395</fans><started>2009-09-22</started><ended/></show><show><id>1268</id><name>The
+        Goode Family</name><fans>69</fans><started>2009-05-27</started><ended>2009-08-07</ended></show><show><id>4170</id><name>The
+        Goodwin Games</name><fans>528</fans><started>2013-05-20</started><ended>2013-07-01</ended></show><show><id>4256</id><name>The
+        Greatest Event in Television History</name><fans>8</fans><started/><ended/></show><show><id>1951</id><name>The
+        Guild</name><fans>436</fans><started/><ended/></show><show><id>1902</id><name>The
+        Hard Times of RJ Berger</name><fans>1564</fans><started>2010-06-06</started><ended>2011-05-30</ended></show><show><id>1274</id><name>The
+        Hitchhiker''s Guide To The Galaxy</name><fans>464</fans><started>1981-01-05</started><ended>1981-02-09</ended></show><show><id>3476</id><name>The
+        Hollow Crown</name><fans>336</fans><started>2012-06-30</started><ended/></show><show><id>5104</id><name>The
+        Honourable Woman</name><fans>497</fans><started>2014-07-03</started><ended>2014-08-21</ended></show><show><id>3078</id><name>The
+        Hour</name><fans>513</fans><started>2011-07-19</started><ended>2012-12-13</ended></show><show><id>765</id><name>The
+        Inbetweeners</name><fans>330</fans><started>2008-05-01</started><ended/></show><show><id>2673</id><name>The
+        Increasingly Poor Decisions Of Todd Margaret</name><fans>262</fans><started>2010-10-01</started><ended/></show><show><id>239</id><name>The
+        IT Crowd</name><fans>2174</fans><started>2006-02-03</started><ended>2013-09-27</ended></show><show><id>1608</id><name>The
+        Jeff Dunham Show</name><fans>299</fans><started>2009-10-22</started><ended>2009-12-10</ended></show><show><id>416</id><name>The
+        Kill Point</name><fans>55</fans><started>2007-07-22</started><ended>2007-08-26</ended></show><show><id>2494</id><name>The
+        Killing</name><fans>3755</fans><started>2011-04-03</started><ended/></show><show><id>5169</id><name>The
+        Knick</name><fans>2052</fans><started>2014-08-08</started><ended/></show><show><id>241</id><name>The
+        L Word</name><fans>674</fans><started>2004-01-18</started><ended>2009-03-08</ended></show><show><id>6154</id><name>The
+        Last Kingdom</name><fans>442</fans><started>2015-10-10</started><ended/></show><show><id>5637</id><name>The
+        Last Man On Earth</name><fans>1700</fans><started>2015-03-01</started><ended/></show><show><id>5139</id><name>The
+        Last Ship</name><fans>2040</fans><started>2014-06-22</started><ended/></show><show><id>1141</id><name>The
+        Last Templar</name><fans>44</fans><started>2009-01-25</started><ended>2009-01-26</ended></show><show><id>2547</id><name>The
+        League</name><fans>581</fans><started>2009-10-29</started><ended/></show><show><id>1424</id><name>The
+        League Of Gentlemen</name><fans>40</fans><started>1999-01-11</started><ended>2002-10-31</ended></show><show><id>5061</id><name>The
+        Leftovers</name><fans>2808</fans><started>2014-06-29</started><ended/></show><show><id>5477</id><name>The
+        Librarians</name><fans>943</fans><started/><ended/></show><show><id>4129</id><name>The
+        Lizzie Bennet Diaries</name><fans>152</fans><started>2012-04-09</started><ended/></show><show><id>5709</id><name>The
+        Lizzie Borden Chronicles</name><fans>129</fans><started/><ended/></show><show><id>637</id><name>The
+        Lone Gunmen</name><fans>103</fans><started>2001-03-04</started><ended>2001-06-01</ended></show><show><id>366</id><name>The
+        Loop</name><fans>32</fans><started>2006-03-15</started><ended>2007-07-01</ended></show><show><id>243</id><name>The
+        Lost Room</name><fans>599</fans><started>2006-12-11</started><ended>2006-12-13</ended></show><show><id>4320</id><name>The
+        Lydia Bennet</name><fans>2</fans><started/><ended/></show><show><id>2779</id><name>The
+        Lying Game</name><fans>1663</fans><started>2011-08-15</started><ended>2013-03-12</ended></show><show><id>6485</id><name>The
+        Magicians</name><fans>788</fans><started>2016-01-25</started><ended/></show><show><id>5578</id><name>The
+        Man in the High Castle</name><fans>1680</fans><started/><ended/></show><show><id>843</id><name>The
+        Mentalist</name><fans>7638</fans><started>2008-09-23</started><ended>2015-02-18</ended></show><show><id>4394</id><name>The
+        Michael J. Fox Show</name><fans>704</fans><started>2013-09-26</started><ended/></show><show><id>1592</id><name>The
+        Middle</name><fans>534</fans><started>2009-09-30</started><ended/></show><show><id>815</id><name>The
+        Middleman</name><fans>188</fans><started>2008-06-16</started><ended>2008-09-01</ended></show><show><id>4793</id><name>The
+        Millers</name><fans>121</fans><started>2013-10-03</started><ended>2015-07-18</ended></show><show><id>3852</id><name>The
+        Mindy Project</name><fans>620</fans><started>2012-09-25</started><ended/></show><show><id>5466</id><name>The
+        Missing</name><fans>411</fans><started>2014-10-28</started><ended/></show><show><id>6213</id><name>The
+        Muppets</name><fans>271</fans><started>2015-09-22</started><ended/></show><show><id>4796</id><name>The
+        Musketeers</name><fans>1307</fans><started>2014-01-19</started><ended/></show><show><id>379</id><name>The
+        New Adventures Of Old Christine</name><fans>35</fans><started>2006-03-13</started><ended>2010-05-12</ended></show><show><id>3569</id><name>The
+        New Normal</name><fans>1011</fans><started>2012-09-11</started><ended>2013-04-02</ended></show><show><id>3418</id><name>The
+        Newsroom</name><fans>2769</fans><started>2012-06-24</started><ended>2014-12-14</ended></show><show><id>6703</id><name>The
+        Night Manager</name><fans>743</fans><started/><ended/></show><show><id>244</id><name>The
+        Nine</name><fans>84</fans><started>2006-10-04</started><ended>2007-08-08</ended></show><show><id>2631</id><name>The
+        Nine Lives Of Chloe King</name><fans>844</fans><started>2011-06-14</started><ended>2011-08-16</ended></show><show><id>1193</id><name>The
+        No. 1 Ladies Detective Agency</name><fans>93</fans><started>2009-03-15</started><ended>2009-04-19</ended></show><show><id>246</id><name>The
+        O.C.</name><fans>2594</fans><started>2003-08-05</started><ended>2007-02-22</ended></show><show><id>458</id><name>The
+        Office US</name><fans>863</fans><started>2005-03-24</started><ended>2013-05-16</ended></show><show><id>4428</id><name>The
+        Originals</name><fans>3672</fans><started>2013-10-03</started><ended/></show><show><id>1698</id><name>The
+        Pacific</name><fans>1645</fans><started>2010-03-14</started><ended>2010-05-16</ended></show><show><id>3790</id><name>The
+        Paradise</name><fans>496</fans><started>2012-09-25</started><ended>2013-12-08</ended></show><show><id>6798</id><name>The
+        Path</name><fans>292</fans><started/><ended/></show><show><id>1159</id><name>The
+        Penguins of Madagascar</name><fans>629</fans><started>2008-11-28</started><ended>2015-02-15</ended></show><show><id>1332</id><name>The
+        Philanthropist</name><fans>289</fans><started>2009-06-24</started><ended>2009-08-12</ended></show><show><id>1937</id><name>The
+        Pillars of the Earth</name><fans>1124</fans><started>2010-07-23</started><ended>2010-08-27</ended></show><show><id>2819</id><name>The
+        Playboy Club</name><fans>319</fans><started>2011-09-19</started><ended>2011-10-03</ended></show><show><id>1439</id><name>The
+        Prisoner</name><fans>565</fans><started>2009-11-15</started><ended>2009-11-17</ended></show><show><id>725</id><name>The
+        Return of Jezebel James</name><fans>5</fans><started>2008-03-14</started><ended>2008-03-21</ended></show><show><id>5686</id><name>The
+        Returned</name><fans>202</fans><started/><ended/></show><show><id>249</id><name>The
+        Riches</name><fans>81</fans><started>2007-03-12</started><ended>2008-04-29</ended></show><show><id>3203</id><name>The
+        River</name><fans>1545</fans><started>2012-02-07</started><ended>2012-03-20</ended></show><show><id>707</id><name>The
+        Sarah Silverman Program</name><fans>110</fans><started>2007-02-01</started><ended>2010-04-15</ended></show><show><id>2807</id><name>The
+        Secret Circle</name><fans>2919</fans><started>2011-09-15</started><ended>2012-05-11</ended></show><show><id>818</id><name>The
+        Secret Life of the American Teenager</name><fans>999</fans><started>2008-07-01</started><ended>2013-06-03</ended></show><show><id>6514</id><name>The
+        Shannara Chronicles</name><fans>2280</fans><started>2016-01-05</started><ended/></show><show><id>251</id><name>The
+        Shield</name><fans>1200</fans><started>2002-03-12</started><ended>2008-11-25</ended></show><show><id>254</id><name>The
+        Simpsons</name><fans>5306</fans><started>1989-12-17</started><ended/></show><show><id>3800</id><name>The
+        Slap</name><fans>202</fans><started>2011-10-06</started><ended>2011-11-24</ended></show><show><id>6271</id><name>The
+        Sopranos</name><fans>264</fans><started>1999-01-10</started><ended>2007-06-10</ended></show><show><id>257</id><name>The
+        Starter Wife</name><fans>115</fans><started>2007-05-31</started><ended>2008-12-12</ended></show><show><id>1511</id><name>The
+        State Within</name><fans>28</fans><started>2006-11-02</started><ended/></show><show><id>1375</id><name>The
+        Storm</name><fans>42</fans><started>2009-07-26</started><ended>2009-08-02</ended></show><show><id>5120</id><name>The
+        Strain</name><fans>3019</fans><started>2014-07-13</started><ended/></show><show><id>5774</id><name>The
+        Thick of It</name><fans>121</fans><started/><ended/></show><show><id>4591</id><name>The
+        Tomorrow People</name><fans>1939</fans><started>2013-10-09</started><ended>2014-05-05</ended></show><show><id>3874</id><name>The
+        Town</name><fans>40</fans><started>2012-12-03</started><ended>2012-12-19</ended></show><show><id>259</id><name>The
+        Triangle</name><fans>28</fans><started>2005-12-05</started><ended>2005-12-07</ended></show><show><id>260</id><name>The
+        Tudors</name><fans>1268</fans><started>2007-04-01</started><ended>2010-06-20</ended></show><show><id>262</id><name>The
+        Unit</name><fans>192</fans><started>2006-03-07</started><ended>2009-05-10</ended></show><show><id>1219</id><name>The
+        Unusuals</name><fans>232</fans><started>2009-04-08</started><ended>2009-06-17</ended></show><show><id>1500</id><name>The
+        Vampire Diaries</name><fans>10730</fans><started>2009-09-10</started><ended/></show><show><id>2194</id><name>The
+        Walking Dead</name><fans>16054</fans><started>2010-10-31</started><ended/></show><show><id>265</id><name>The
+        War At Home</name><fans>163</fans><started>2005-09-11</started><ended>2007-04-22</ended></show><show><id>5789</id><name>The
+        Whispers</name><fans>584</fans><started>2015-06-01</started><ended/></show><show><id>4268</id><name>The
+        White Queen</name><fans>658</fans><started>2013-06-16</started><ended/></show><show><id>2004</id><name>The
+        Whole Truth</name><fans>128</fans><started>2010-09-22</started><ended/></show><show><id>4361</id><name>The
+        Wire</name><fans>1191</fans><started>2002-06-02</started><ended>2008-03-09</ended></show><show><id>4633</id><name>The
+        Wrong Mans</name><fans>254</fans><started>2013-09-24</started><ended/></show><show><id>6579</id><name>The
+        X-Files</name><fans>1919</fans><started/><ended/></show><show><id>267</id><name>Third
+        Watch</name><fans>98</fans><started>1999-09-23</started><ended>2005-05-06</ended></show><show><id>6773</id><name>Thirteen</name><fans>194</fans><started/><ended/></show><show><id>6064</id><name>This
+        Is England ''90</name><fans>349</fans><started/><ended/></show><show><id>2762</id><name>Thor
+        &amp; Loki: Blood Brothers</name><fans>117</fans><started/><ended/></show><show><id>2209</id><name>Thorne</name><fans>184</fans><started>2010-10-10</started><ended/></show><show><id>4892</id><name>Those
+        Who Kill</name><fans>298</fans><started>2014-03-03</started><ended>2014-05-18</ended></show><show><id>1445</id><name>Three
+        Rivers</name><fans>229</fans><started>2009-10-04</started><ended>2010-07-03</ended></show><show><id>269</id><name>Til''
+        Death</name><fans>96</fans><started>2006-09-07</started><ended>2010-06-20</ended></show><show><id>6835</id><name>Time
+        Traveling Bong</name><fans>0</fans><started>2016-04-20</started><ended>2016-04-22</ended></show><show><id>625</id><name>Tin
+        Man</name><fans>57</fans><started>2007-12-02</started><ended>2007-12-04</ended></show><show><id>3186</id><name>Todd
+        and the Book of Pure Evil</name><fans>335</fans><started>2010-09-29</started><ended>2012-01-26</ended></show><show><id>744</id><name>Top
+        Gear</name><fans>4672</fans><started>2002-10-20</started><ended/></show><show><id>4066</id><name>Top
+        of the Lake</name><fans>597</fans><started>2013-03-18</started><ended>2013-04-15</ended></show><show><id>1356</id><name>Torchwood</name><fans>1858</fans><started>2006-10-22</started><ended>2011-08-31</ended></show><show><id>3180</id><name>Touch</name><fans>3161</fans><started>2012-01-25</started><ended>2013-05-10</ended></show><show><id>5273</id><name>Transparent</name><fans>484</fans><started/><ended/></show><show><id>1505</id><name>Trauma</name><fans>344</fans><started>2009-09-28</started><ended>2010-04-26</ended></show><show><id>277</id><name>Traveler</name><fans>63</fans><started>2007-05-10</started><ended>2007-07-18</ended></show><show><id>3168</id><name>Treasure
+        Island</name><fans>100</fans><started>2012-01-01</started><ended>2012-01-02</ended></show><show><id>4713</id><name>Treme</name><fans>235</fans><started>2010-04-11</started><ended>2013-12-29</ended></show><show><id>1533</id><name>Trinity</name><fans>651</fans><started>2009-09-20</started><ended>2009-11-08</ended></show><show><id>6492</id><name>Tripped</name><fans>126</fans><started/><ended/></show><show><id>988</id><name>True
+        Blood</name><fans>9708</fans><started>2008-09-07</started><ended>2014-08-24</ended></show><show><id>4756</id><name>True
+        Detective</name><fans>8846</fans><started>0000-00-00</started><ended/></show><show><id>3454</id><name>True
+        Love</name><fans>160</fans><started>2012-06-17</started><ended>2012-06-20</ended></show><show><id>1114</id><name>Trust
+        Me</name><fans>91</fans><started>2009-01-26</started><ended>2009-04-07</ended></show><show><id>5017</id><name>Turn</name><fans>283</fans><started>2014-04-06</started><ended/></show><show><id>4998</id><name>Twin
+        Peaks</name><fans>888</fans><started/><ended/></show><show><id>280</id><name>Two
+        And A Half Men</name><fans>1366</fans><started>2003-09-22</started><ended>2015-02-19</ended></show><show><id>282</id><name>Ugly
+        Betty</name><fans>2055</fans><started>2006-09-28</started><ended>2010-04-14</ended></show><show><id>388</id><name>Ultimate
+        Force</name><fans>21</fans><started>2002-09-16</started><ended>2006-09-25</ended></show><show><id>5644</id><name>Unbreakable
+        Kimmy Schmidt</name><fans>505</fans><started>2015-03-06</started><ended/></show><show><id>4269</id><name>Under
+        The Dome</name><fans>4678</fans><started>2013-06-24</started><ended/></show><show><id>784</id><name>Underbelly</name><fans>319</fans><started>2008-02-13</started><ended>2013-08-31</ended></show><show><id>2143</id><name>Undercovers</name><fans>462</fans><started>2010-09-22</started><ended>2010-12-29</ended></show><show><id>2905</id><name>Unforgettable</name><fans>1047</fans><started>2011-09-20</started><ended/></show><show><id>704</id><name>UnHitched</name><fans>27</fans><started>2008-03-02</started><ended>2008-03-30</ended></show><show><id>1101</id><name>United
+        States Of Tara</name><fans>1220</fans><started>2009-01-18</started><ended>2011-06-20</ended></show><show><id>1909</id><name>Unnatural
+        History</name><fans>178</fans><started>2010-06-13</started><ended>2010-09-21</ended></show><show><id>2859</id><name>Up
+        All Night</name><fans>360</fans><started>2011-09-14</started><ended>2012-12-13</ended></show><show><id>3949</id><name>Utopia</name><fans>2610</fans><started>2013-01-15</started><ended>2014-08-12</ended></show><show><id>1610</id><name>V</name><fans>6606</fans><started>2009-11-03</started><ended>2011-05-13</ended></show><show><id>992</id><name>Valentine</name><fans>47</fans><started>2008-10-05</started><ended>2009-07-19</ended></show><show><id>285</id><name>Vanished</name><fans>84</fans><started>2006-08-21</started><ended>2006-11-10</ended></show><show><id>3355</id><name>VEEP</name><fans>789</fans><started>2012-04-22</started><ended/></show><show><id>2592</id><name>Vera</name><fans>177</fans><started>2011-05-01</started><ended/></show><show><id>287</id><name>Veronica
+        Mars</name><fans>2359</fans><started>2004-09-22</started><ended>2007-05-22</ended></show><show><id>6450</id><name>Versailles</name><fans>175</fans><started/><ended/></show><show><id>2176</id><name>Vexed</name><fans>238</fans><started>2010-08-15</started><ended>2010-08-29</ended></show><show><id>4158</id><name>Vicious</name><fans>889</fans><started>2013-04-29</started><ended/></show><show><id>628</id><name>Videogame</name><fans>12</fans><started/><ended/></show><show><id>4017</id><name>Vikings</name><fans>5816</fans><started>2013-03-03</started><ended/></show><show><id>6688</id><name>Vinyl</name><fans>1524</fans><started>2016-02-14</started><ended/></show><show><id>1339</id><name>Virtuality</name><fans>385</fans><started>2009-06-26</started><ended>2009-06-26</ended></show><show><id>1069</id><name>Wallander</name><fans>334</fans><started>2008-11-30</started><ended/></show><show><id>6639</id><name>War
+        And Peace</name><fans>174</fans><started/><ended/></show><show><id>1359</id><name>Warehouse
+        13</name><fans>3721</fans><started>2009-07-07</started><ended>2014-05-19</ended></show><show><id>5767</id><name>Wayward
+        Pines</name><fans>1537</fans><started>2015-05-14</started><ended>2015-07-23</ended></show><show><id>2738</id><name>Web
+        Therapy</name><fans>221</fans><started>2011-07-19</started><ended>2015-01-28</ended></show><show><id>386</id><name>Weeds</name><fans>3830</fans><started>2005-08-07</started><ended>2012-09-16</ended></show><show><id>4944</id><name>Welcome
+        to Sweden</name><fans>222</fans><started>2014-03-21</started><ended/></show><show><id>698</id><name>Welcome
+        to The Captain</name><fans>10</fans><started>2008-02-04</started><ended>2008-03-03</ended></show><show><id>5992</id><name>Wet
+        Hot American Summer: First Day of Camp</name><fans>207</fans><started>2015-07-31</started><ended/></show><show><id>291</id><name>What
+        About Brian</name><fans>70</fans><started>2006-04-16</started><ended>2007-03-26</ended></show><show><id>1513</id><name>White
+        Collar</name><fans>7018</fans><started>2009-10-23</started><ended>2014-12-18</ended></show><show><id>1130</id><name>Whitechapel</name><fans>849</fans><started>2009-02-02</started><ended>2013-10-09</ended></show><show><id>2237</id><name>Whites</name><fans>156</fans><started>2010-09-28</started><ended>2010-11-02</ended></show><show><id>2644</id><name>Wilfred</name><fans>2257</fans><started>2011-06-23</started><ended>2014-08-13</ended></show><show><id>294</id><name>Windfall</name><fans>17</fans><started>2006-06-08</started><ended>2006-08-31</ended></show><show><id>4442</id><name>Witches
+        Of East End</name><fans>1334</fans><started>2013-10-06</started><ended>2014-10-05</ended></show><show><id>296</id><name>Without
+        A Trace</name><fans>215</fans><started>2002-09-26</started><ended>2009-05-19</ended></show><show><id>1685</id><name>Wolverine
+        &amp; The X-Men</name><fans>157</fans><started>2009-01-23</started><ended/></show><show><id>577</id><name>Women''s
+        Murder Club</name><fans>108</fans><started>2007-10-12</started><ended>2008-05-13</ended></show><show><id>6330</id><name>Wonderfalls</name><fans>62</fans><started>2004-03-12</started><ended>2004-12-15</ended></show><show><id>3559</id><name>World
+        Without End</name><fans>521</fans><started>2012-09-04</started><ended>2012-10-23</ended></show><show><id>932</id><name>Worst
+        Week</name><fans>154</fans><started>2008-09-22</started><ended>2009-06-06</ended></show><show><id>1598</id><name>XIII</name><fans>164</fans><started>2008-10-06</started><ended>2008-10-13</ended></show><show><id>6088</id><name>You''re
+        The Worst</name><fans>362</fans><started>2015-09-09</started><ended/></show><show><id>6209</id><name>You,
+        Me and the Apocalypse</name><fans>336</fans><started>2015-09-30</started><ended/></show><show><id>298</id><name>Young
+        Americans</name><fans>61</fans><started>2000-07-12</started><ended>2000-08-30</ended></show><show><id>2281</id><name>Young
+        Justice</name><fans>208</fans><started>2010-11-26</started><ended>2013-03-16</ended></show><show><id>3306</id><name>Zen</name><fans>99</fans><started>2011-01-02</started><ended/></show><show><id>3987</id><name>Zero
+        Hour</name><fans>764</fans><started>2013-02-14</started><ended>2013-08-03</ended></show></shows></data><status>success</status></root>
+
+'}
+    headers:
+      alternate-protocol: ['443:npn-spdy/3.1']
+      cache-control: ['no-store, no-cache, must-revalidate, post-check=0, pre-check=0']
+      connection: [keep-alive]
+      content-type: [text/xml;charset=utf-8]
+      date: ['Sat, 16 Apr 2016 08:53:06 GMT']
+      expires: ['Thu, 19 Nov 1981 08:52:00 GMT']
+      pragma: [no-cache]
+      server: [nginx/1.8.0]
+      x-powered-by: [PHP/5.6.16]
+    status: {code: 200, message: OK}
+- request:
+    body: null
+    headers:
+      Cookie: [SMFCookie17499=a%3A4%3A%7Bi%3A0%3Bs%3A6%3A%22628840%22%3Bi%3A1%3Bs%3A40%3A%223eb307721f116ce20d91f846207d2d66a0b46c6b%22%3Bi%3A2%3Bi%3A1492332783%3Bi%3A3%3Bi%3A2%3B%7D;
+          PHPSESSID=0573915c36729bee701e2a553496d2c8; Max-Age=31536000; PHPSESSID=a7e3fed2c6aaedb10941cd32804f5cf9]
+      User-Agent: [Subliminal/2.0.rc1]
+    method: GET
+    uri: https://api.italiansubs.net/api/rest/subtitles/search?q=7x05&show_id=399&apikey=d86ad6ec041b334fac1e512174ee04d5&version=720p
+  response:
+    body: {string: !!python/unicode '<?xml version="1.0" encoding="utf-8"?>
+
+        <root><data><subtitles><subtitle><id>45282</id><name>The Big Bang Theory 7x05</name><version>720p</version><show_id>399</show_id><show_name>The
+        Big Bang Theory</show_name></subtitle></subtitles><page>1</page><pages>1</pages><count>1</count><next/></data><status>success</status></root>
+
+'}
+    headers:
+      alternate-protocol: ['443:npn-spdy/3.1']
+      cache-control: ['no-store, no-cache, must-revalidate, post-check=0, pre-check=0']
+      connection: [keep-alive]
+      content-type: [text/xml;charset=utf-8]
+      date: ['Sat, 16 Apr 2016 08:53:07 GMT']
+      expires: ['Thu, 19 Nov 1981 08:52:00 GMT']
+      pragma: [no-cache]
+      server: [nginx/1.8.0]
+      x-powered-by: [PHP/5.6.16]
+    status: {code: 200, message: OK}
+- request:
+    body: null
+    headers:
+      Cookie: [SMFCookie17499=a%3A4%3A%7Bi%3A0%3Bs%3A6%3A%22628840%22%3Bi%3A1%3Bs%3A40%3A%223eb307721f116ce20d91f846207d2d66a0b46c6b%22%3Bi%3A2%3Bi%3A1492332783%3Bi%3A3%3Bi%3A2%3B%7D;
+          PHPSESSID=0573915c36729bee701e2a553496d2c8; Max-Age=31536000; PHPSESSID=a7e3fed2c6aaedb10941cd32804f5cf9]
+      User-Agent: [Subliminal/2.0.rc1]
+    method: GET
+    uri: https://api.italiansubs.net/api/rest/subtitles/download?authcode=1e5d5c311f4ef3d070dc965d934b95b6&apikey=d86ad6ec041b334fac1e512174ee04d5&subtitle_id=45282
+  response:
+    body: {string: !!python/unicode ''}
+    headers:
+      alternate-protocol: ['443:npn-spdy/3.1']
+      cache-control: ['no-store, no-cache, must-revalidate, post-check=0, pre-check=0']
+      connection: [keep-alive]
+      content-type: [text/html; charset=utf-8]
+      date: ['Sat, 16 Apr 2016 08:53:07 GMT']
+      expires: ['Thu, 19 Nov 1981 08:52:00 GMT']
+      location: ['http://www.italiansubs.net/index.php?option=com_remository&Itemid=6&func=download&id=45282&chk=b58edaea7a1006223118576396f6db8e&no_html=1&fname=The.Big.Bang.Theory.s07e05.720p.sub.itasa.zip']
+      pragma: [no-cache]
+      server: [nginx/1.8.0]
+      x-powered-by: [PHP/5.6.16]
+    status: {code: 301, message: Moved Permanently}
+- request:
+    body: null
+    headers:
+      Cookie: [SMFCookie17499=a%3A4%3A%7Bi%3A0%3Bs%3A6%3A%22628840%22%3Bi%3A1%3Bs%3A40%3A%223eb307721f116ce20d91f846207d2d66a0b46c6b%22%3Bi%3A2%3Bi%3A1492332783%3Bi%3A3%3Bi%3A2%3B%7D;
+          PHPSESSID=0573915c36729bee701e2a553496d2c8; Max-Age=31536000; cb7d0ded6b8cd9e20ce31b4d792da3e9=58+9+1+C4F16+B5A+2164745+6415F+2+9551A+8155F+8+058461111+1+D5B55505D525A191154114C16+94559+B+B4114514B4011+A4B51405F115E5254+81A4A46515A5D+858+C59581F42+64045415F4D;
+          08c499f64b48fa670c9b210e6a9f5f28=cea8e7017d457072992de4408b50047b]
+      User-Agent: [Subliminal/2.0.rc1]
+    method: GET
+    uri: http://www.italiansubs.net/index.php?option=com_remository&Itemid=6&func=download&id=45282&chk=b58edaea7a1006223118576396f6db8e&no_html=1&fname=The.Big.Bang.Theory.s07e05.720p.sub.itasa.zip
+  response:
+    body:
+      string: !!binary |
+        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
+    headers:
+      accept-ranges: [bytes]
+      cache-control: [no-cache]
+      connection: [keep-alive]
+      content-disposition: [attachment; filename=The.Big.Bang.Theory.s07e05.720p.sub.itasa.zip]
+      content-length: ['12635']
+      content-transfer-encoding: [binary]
+      content-type: [application/zip; charset=utf-8]
+      date: ['Sat, 16 Apr 2016 08:53:08 GMT']
+      expires: ['-1']
+      p3p: [CP="NOI ADM DEV PSAi COM NAV OUR OTRo STP IND DEM"]
+      pragma: [public]
+      server: [nginx/1.8.0]
+      x-powered-by: [PHP/5.6.16]
+    status: {code: 200, message: OK}
+version: 1
