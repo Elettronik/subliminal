@@ -47,8 +47,7 @@ def episodes():
                     'The Big Bang Theory', 7, 5, title='The Workplace Proximity', year=2007, tvdb_id=4668379,
                     series_tvdb_id=80379, series_imdb_id='tt0898266', format='HDTV', release_group='DIMENSION',
                     resolution='720p', video_codec='h264', audio_codec='AC3', imdb_id='tt3229392', size=501910737,
-                    hashes={'itasa': '6303e7ee6a835e9fcede9fb2fb00cb36',
-                            'napiprojekt': '6303e7ee6a835e9fcede9fb2fb00cb36',
+                    hashes={'napiprojekt': '6303e7ee6a835e9fcede9fb2fb00cb36',
                             'opensubtitles': '6878b3ef7c1bd19e',
                             'shooter': 'c13e0e5243c56d280064d344676fff94;cd4184d1c0c623735f6db90841ce15fc;'
                                        '3faefd72f92b63f2504269b4f484a377;8c68d1ef873afb8ba0cc9f97cbac41c1',
@@ -59,8 +58,7 @@ def episodes():
                     'Game of Thrones', 3, 10, title='Mhysa', tvdb_id=4517466, series_tvdb_id=121361,
                     series_imdb_id='tt0944947', format='WEB-DL', release_group='NTb', resolution='720p',
                     video_codec='h264', audio_codec='AC3', imdb_id='tt2178796', size=2142810931,
-                    hashes={'itasa': '6303e7ee6a835e9fcede9fb2fb00cb36',
-                            'napiprojekt': '6303e7ee6a835e9fcede9fb2fb00cb36',
+                    hashes={'napiprojekt': '6303e7ee6a835e9fcede9fb2fb00cb36',
                             'opensubtitles': 'b850baa096976c22',
                             'shooter': 'b02d992c04ad74b31c252bd5a097a036;ef1b32f873b2acf8f166fc266bdf011a;'
                                        '82ce34a3bcee0c66ed3b26d900d31cca;78113770551f3efd1e2d4ec45898c59c',
