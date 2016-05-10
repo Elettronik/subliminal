@@ -28,7 +28,7 @@ logger = logging.getLogger(__name__)
 class ItaSASubtitle(Subtitle):
     provider_name = 'itasa'
 
-    def __init__(self, sub_id, series, season, episode, format, full_data, hash=None):
+    def __init__(self, sub_id, series, season, episode, format, full_data):
         super(ItaSASubtitle, self).__init__(Language('ita'))
         self.sub_id = sub_id
         self.series = series
@@ -36,7 +36,6 @@ class ItaSASubtitle(Subtitle):
         self.episode = episode
         self.format = format
         self.full_data = full_data
-        self.hash = hash
 
     @property
     def id(self):
@@ -59,11 +58,6 @@ class ItaSASubtitle(Subtitle):
             matches.add('format')
         if not video.format and not self.format:
             matches.add('format')
-        # hash
-        if 'itasa' in video.hashes and self.hash == video.hashes['itasa']:
-            print('Hash %s' % video.hashes['itasa'])
-            if 'series' in matches and 'season' in matches and 'episode' in matches:
-                matches.add('hash')
 
         # other properties
         matches |= guess_matches(video, guessit(self.full_data), partial=True)
@@ -75,8 +69,6 @@ class ItaSAProvider(Provider):
     languages = {Language('ita')}
 
     video_types = (Episode,)
-
-    required_hash = 'itasa'
 
     server_url = 'https://api.italiansubs.net/api/rest/'
 
@@ -93,7 +85,7 @@ class ItaSAProvider(Provider):
 
     def initialize(self):
         self.session = Session()
-        self.session.headers = {'User-Agent': 'Subliminal/%s' % __version__}
+        self.session.headers['User-Agent'] = 'Subliminal/%s' % __version__
 
         # login
         if self.username is not None and self.password is not None:
@@ -110,7 +102,6 @@ class ItaSAProvider(Provider):
             if root.find('status').text == 'fail':
                 raise AuthenticationError(root.find('error/message').text)
 
-            # logger.debug('Logged in: \n' + etree.tostring(root))
             self.auth_code = root.find('data/user/authcode').text
 
             data = {
@@ -193,7 +184,7 @@ class ItaSAProvider(Provider):
             r.raise_for_status()
             root = etree.fromstring(r.content)
 
-            logger.info('Loading suggestion page %s', root.find('data/page').text)
+            logger.info('Loading suggestion page %r', root.find('data/page').text)
 
             # Looking for show in following pages
             for show in root.findall('data/shows/show'):
@@ -256,7 +247,7 @@ class ItaSAProvider(Provider):
 
         return r.content
 
-    def query(self, series, season, episode, format, resolution, country=None, hash=None):
+    def query(self, series, season, episode, format, resolution, country=None):
 
         # To make queries you need to be logged in
         if not self.logged_in:
@@ -269,11 +260,11 @@ class ItaSAProvider(Provider):
             return []
 
         # get the page of the season of the show
-        logger.info('Getting the subtitle of show id %d, season %d episode %d, format %s', show_id,
+        logger.info('Getting the subtitle of show id %d, season %d episode %d, format %r', show_id,
                     season, episode, format)
         subtitles = []
 
-        # Default format is HDTV
+        # Default format is SDTV
         sub_format = ''
         if format is None or format.lower() == 'hdtv':
             if resolution in ('1080i', '1080p', '720p'):
@@ -289,7 +280,6 @@ class ItaSAProvider(Provider):
             'q': '%dx%02d' % (season, episode),
             'version': sub_format
             }
-        logger.debug(params)
         r = self.session.get(self.server_url + 'subtitles/search', params=params, timeout=30)
         r.raise_for_status()
         root = etree.fromstring(r.content)
@@ -302,7 +292,7 @@ class ItaSAProvider(Provider):
         for subtitle in root.findall('data/subtitles/subtitle'):
             if '%dx%02d' % (season, episode) in subtitle.find('name').text.lower():
 
-                logger.debug('Found subtitle id %d - %s - %s',
+                logger.debug('Found subtitle id %d - %r - %r',
                              int(subtitle.find('id').text),
                              subtitle.find('name').text,
                              subtitle.find('version').text)
@@ -313,8 +303,7 @@ class ItaSAProvider(Provider):
                         season,
                         episode,
                         format,
-                        subtitle.find('name').text,
-                        hash)
+                        subtitle.find('name').text)
 
                 subtitles.append(sub)
 
@@ -326,13 +315,13 @@ class ItaSAProvider(Provider):
             r.raise_for_status()
             root = etree.fromstring(r.content)
 
-            logger.info('Loading subtitles page %s', root.data.page.text)
+            logger.info('Loading subtitles page %r', root.data.page.text)
 
             # Looking for show in following pages
             for subtitle in root.findall('data/subtitles/subtitle'):
                 if '%dx%02d' % (season, episode) in subtitle.find('name').text.lower():
 
-                    logger.debug('Found subtitle id %d - %s - %s',
+                    logger.debug('Found subtitle id %d - %r - %r',
                                  int(subtitle.find('id').text),
                                  subtitle.find('name').text,
                                  subtitle.find('version').text)
@@ -343,8 +332,7 @@ class ItaSAProvider(Provider):
                         season,
                         episode,
                         format,
-                        subtitle.find('name').text,
-                        hash)
+                        subtitle.find('name').text)
 
                     subtitles.append(sub)
 
@@ -365,7 +353,7 @@ class ItaSAProvider(Provider):
             with ZipFile(io.BytesIO(content)) as zf:
                 if len(zf.namelist()) > 1:
 
-                    for name in enumerate(zf.namelist()):
+                    for index, name in enumerate(zf.namelist()):
 
                         if name[0] == 0:
                             # First elemnent
@@ -383,8 +371,7 @@ class ItaSAProvider(Provider):
         return subtitles + additional_subs
 
     def list_subtitles(self, video, languages):
-        return self.query(video.series, video.season, video.episode, video.format, video.resolution,
-                          hash=video.hashes.get('itasa'))
+        return self.query(video.series, video.season, video.episode, video.format, video.resolution)
 
     def download_subtitle(self, subtitle):
         pass

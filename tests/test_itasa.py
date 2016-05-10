@@ -40,13 +40,6 @@ def test_get_matches_no_match(episodes):
     assert matches == set([])
 
 
-def test_get_matches_episode_hash(episodes):
-    subtitle = ItaSASubtitle(5514, 'The Big Bang Theory', 7, 5, 'HDTV',
-                             'The.Big.Bang.Theory.s07e05.sub.itasa.srt', '6303e7ee6a835e9fcede9fb2fb00cb36')
-    matches = subtitle.get_matches(episodes['bbt_s07e05'])
-    assert matches == set(['episode', 'format', 'season', 'series', 'hash'])
-
-
 def test_configuration_error_no_username():
     with pytest.raises(ConfigurationError):
         ItaSAProvider(password=test_password)
