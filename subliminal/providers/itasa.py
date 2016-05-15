@@ -28,13 +28,14 @@ logger = logging.getLogger(__name__)
 class ItaSASubtitle(Subtitle):
     provider_name = 'itasa'
 
-    def __init__(self, sub_id, series, season, episode, format, full_data):
+    def __init__(self, sub_id, series, season, episode, video_format, year, full_data):
         super(ItaSASubtitle, self).__init__(Language('ita'))
         self.sub_id = sub_id
         self.series = series
         self.season = season
         self.episode = episode
-        self.format = format
+        self.format = video_format
+        self.year = year
         self.full_data = full_data
 
     @property
@@ -58,6 +59,8 @@ class ItaSASubtitle(Subtitle):
             matches.add('format')
         if not video.format and not self.format:
             matches.add('format')
+        if video.year and self.year == video.year:
+            matches.add('year')
 
         # other properties
         matches |= guess_matches(video, guessit(self.full_data), partial=True)
@@ -274,6 +277,18 @@ class ItaSAProvider(Provider):
         else:
             sub_format = format.lower()
 
+        # Look for year
+        params = {
+            'apikey': self.apikey
+        }
+        r = self.session.get(self.server_url + 'shows/' + str(show_id), params=params, timeout=30)
+        r.raise_for_status()
+        root = etree.fromstring(r.content)
+
+        year = root.find('data/show/started').text
+        if year:
+            year = int(year.split('-', 1)[0])
+
         params = {
             'apikey': self.apikey,
             'show_id': show_id,
@@ -288,7 +303,7 @@ class ItaSAProvider(Provider):
             logger.warning('Subtitles not found')
             return []
 
-        # Looking for subtitlles in first page
+        # Looking for subtitles in first page
         for subtitle in root.findall('data/subtitles/subtitle'):
             if '%dx%02d' % (season, episode) in subtitle.find('name').text.lower():
 
@@ -303,6 +318,7 @@ class ItaSAProvider(Provider):
                         season,
                         episode,
                         format,
+                        year,
                         subtitle.find('name').text)
 
                 subtitles.append(sub)
@@ -332,6 +348,7 @@ class ItaSAProvider(Provider):
                         season,
                         episode,
                         format,
+                        year,
                         subtitle.find('name').text)
 
                     subtitles.append(sub)

@@ -20,21 +20,21 @@ test_password = 'subliminal-test'
 
 
 def test_get_matches_season_episode_resolution(episodes):
-    subtitle = ItaSASubtitle(5514, 'The Big Bang Theory', 7, 5, '720p',
+    subtitle = ItaSASubtitle(5514, 'The Big Bang Theory', 7, 5, '720p', 2007,
                              'The.Big.Bang.Theory.s07e05.720p.sub.itasa.srt')
     matches = subtitle.get_matches(episodes['bbt_s07e05'])
-    assert matches == {'series', 'season', 'episode', 'resolution'}
+    assert matches == {'series', 'season', 'episode', 'resolution', 'year'}
 
 
 def test_get_matches_season_episode(episodes):
-    subtitle = ItaSASubtitle(5514, 'The Big Bang Theory', 7, 5, 'HDTV',
+    subtitle = ItaSASubtitle(5514, 'The Big Bang Theory', 7, 5, 'HDTV', 2007,
                              'The.Big.Bang.Theory.s07e05.sub.itasa.srt')
     matches = subtitle.get_matches(episodes['bbt_s07e05'])
-    assert matches == {'series', 'season', 'episode', 'format'}
+    assert matches == {'series', 'season', 'episode', 'format', 'year'}
 
 
 def test_get_matches_no_match(episodes):
-    subtitle = ItaSASubtitle(5514, 'The Big Bang Theory', 7, 5, 'HDTV',
+    subtitle = ItaSASubtitle(5514, 'The Big Bang Theory', 7, 5, 'HDTV', 2007,
                              'The.Big.Bang.Theory.s07e05.sub.itasa.srt')
     matches = subtitle.get_matches(episodes['got_s03e10'])
     assert matches == set([])
