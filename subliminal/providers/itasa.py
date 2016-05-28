@@ -2,6 +2,7 @@
 import copy
 import io
 import logging
+import re
 
 from babelfish import Language
 from guessit import guessit
@@ -256,6 +257,58 @@ class ItaSAProvider(Provider):
 
         return r.content
 
+    def _get_season_subtitles(self, show_id, season, sub_format):
+        params = {
+            'apikey': self.apikey,
+            'show_id': show_id,
+            'q': 'Stagione %d' % season,
+            'version': sub_format
+        }
+        r = self.session.get(self.server_url + 'subtitles/search', params=params, timeout=30)
+        r.raise_for_status()
+        root = etree.fromstring(r.content)
+
+        if int(root.find('data/count').text) == 0:
+            logger.warning('Subtitles for season not found')
+            return []
+
+        subs = []
+        # Looking for subtitles in first page
+        for subtitle in root.findall('data/subtitles/subtitle'):
+            if 'stagione %d' % season in subtitle.find('name').text.lower():
+                logger.debug('Found season zip id %d - %r - %r',
+                             int(subtitle.find('id').text),
+                             subtitle.find('name').text,
+                             subtitle.find('version').text)
+
+                content = self._download_zip(int(subtitle.find('id').text))
+                if not is_zipfile(io.BytesIO(content)):
+                    if 'limite di download' in content:
+                        raise TooManyRequests()
+                    else:
+                        raise ConfigurationError('Not a zip file: %r' % content)
+
+                with ZipFile(io.BytesIO(content)) as zf:
+                    episode_re = re.compile('s(\d{1,2})e(\d{1,2})')
+                    for index, name in enumerate(zf.namelist()):
+                        match = episode_re.search(name)
+                        if not match:
+                            logger.debug('Cannot decode subtitle %r', name)
+                        else:
+                            sub = ItaSASubtitle(
+                                int(subtitle.find('id').text),
+                                subtitle.find('show_name').text,
+                                int(match.group(1)),
+                                int(match.group(2)),
+                                None,
+                                None,
+                                None,
+                                name)
+                            sub.content = fix_line_ending(zf.read(name))
+                            subs.append(sub)
+
+        return subs
+
     def query(self, series, season, episode, video_format, resolution, country=None):
 
         # To make queries you need to be logged in
@@ -274,7 +327,7 @@ class ItaSAProvider(Provider):
         subtitles = []
 
         # Default format is SDTV
-        if video_format is None or video_format.lower() == 'hdtv':
+        if not video_format or video_format.lower() == 'hdtv':
             if resolution in ('1080i', '1080p', '720p'):
                 sub_format = resolution
             else:
@@ -309,7 +362,17 @@ class ItaSAProvider(Provider):
 
         if int(root.find('data/count').text) == 0:
             logger.warning('Subtitles not found')
-            return []
+            # If no subtitle are found for single episode try to download all season zip
+            subs = self._get_season_subtitles(show_id, season, sub_format)
+            if subs:
+                for subtitle in subs:
+                    subtitle.format = video_format
+                    subtitle.year = year
+                    subtitle.tvdb_id = tvdb_id
+
+                return subs
+            else:
+                return []
 
         # Looking for subtitles in first page
         for subtitle in root.findall('data/subtitles/subtitle'):
