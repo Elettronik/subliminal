@@ -28,7 +28,7 @@ logger = logging.getLogger(__name__)
 class ItaSASubtitle(Subtitle):
     provider_name = 'itasa'
 
-    def __init__(self, sub_id, series, season, episode, video_format, year, full_data):
+    def __init__(self, sub_id, series, season, episode, video_format, year, tvdb_id, full_data):
         super(ItaSASubtitle, self).__init__(Language('ita'))
         self.sub_id = sub_id
         self.series = series
@@ -36,6 +36,7 @@ class ItaSASubtitle(Subtitle):
         self.episode = episode
         self.format = video_format
         self.year = year
+        self.tvdb_id = tvdb_id
         self.full_data = full_data
 
     @property
@@ -61,6 +62,8 @@ class ItaSASubtitle(Subtitle):
             matches.add('format')
         if video.year and self.year == video.year:
             matches.add('year')
+        if video.series_tvdb_id and self.tvdb_id == video.series_tvdb_id:
+            matches.add('tvdb_id')
 
         # other properties
         matches |= guess_matches(video, guessit(self.full_data), partial=True)
@@ -290,6 +293,9 @@ class ItaSAProvider(Provider):
         year = root.find('data/show/started').text
         if year:
             year = int(year.split('-', 1)[0])
+        tvdb_id = root.find('data/show/id_tvdb').text
+        if tvdb_id:
+            tvdb_id = int(tvdb_id)
 
         params = {
             'apikey': self.apikey,
@@ -321,6 +327,7 @@ class ItaSAProvider(Provider):
                         episode,
                         video_format,
                         year,
+                        tvdb_id,
                         subtitle.find('name').text)
 
                 subtitles.append(sub)
@@ -351,6 +358,7 @@ class ItaSAProvider(Provider):
                         episode,
                         video_format,
                         year,
+                        tvdb_id,
                         subtitle.find('name').text)
 
                     subtitles.append(sub)
@@ -385,7 +393,7 @@ class ItaSAProvider(Provider):
                             additional_subs.append(add_sub)
                 else:
                     sub.content = fix_line_ending(zf.read(zf.namelist()[0]))
-                    sub.full_data = zf.namelist()
+                    sub.full_data = zf.namelist()[0]
 
         return subtitles + additional_subs
 
