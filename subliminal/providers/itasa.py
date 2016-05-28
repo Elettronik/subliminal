@@ -85,6 +85,8 @@ class ItaSAProvider(Provider):
         self.password = password
         self.logged_in = False
         self.login_itasa = False
+        self.session = None
+        self.auth_code = None
 
     def initialize(self):
         self.session = Session()
@@ -180,10 +182,10 @@ class ItaSAProvider(Provider):
                 return show_id
 
         # Not in the first page of result try next (if any)
-        next = root.find('data/next')
-        while next.text is not None:
+        next_page = root.find('data/next')
+        while next_page.text is not None:
 
-            r = self.session.get(next.text, timeout=10)
+            r = self.session.get(next_page.text, timeout=10)
             r.raise_for_status()
             root = etree.fromstring(r.content)
 
@@ -197,7 +199,7 @@ class ItaSAProvider(Provider):
 
                     return show_id
 
-            next = root.find('data/next')
+            next_page = root.find('data/next')
 
         # No matches found
         logger.warning('Show id not found: suggestions does not match')
@@ -210,6 +212,7 @@ class ItaSAProvider(Provider):
         First search in the result of :meth:`_get_show_ids` and fallback on a search with :meth:`_search_show_id`
 
         :param str series: series of the episode.
+        :param str country_code: the country in which teh show is aired.
         :return: the show id, if found.
         :rtype: int or None
 
@@ -268,7 +271,6 @@ class ItaSAProvider(Provider):
         subtitles = []
 
         # Default format is SDTV
-        sub_format = ''
         if format is None or format.lower() == 'hdtv':
             if resolution in ('1080i', '1080p', '720p'):
                 sub_format = resolution
@@ -324,10 +326,10 @@ class ItaSAProvider(Provider):
                 subtitles.append(sub)
 
         # Not in the first page of result try next (if any)
-        next = root.find('data/next')
-        while next.text is not None:
+        next_page = root.find('data/next')
+        while next_page.text is not None:
 
-            r = self.session.get(next.text, timeout=30)
+            r = self.session.get(next_page.text, timeout=30)
             r.raise_for_status()
             root = etree.fromstring(r.content)
 
@@ -353,9 +355,9 @@ class ItaSAProvider(Provider):
 
                     subtitles.append(sub)
 
-            next = root.find('data/next')
+            next_page = root.find('data/next')
 
-        # Dowload the subs found, can be more than one in zip
+        # Download the subs found, can be more than one in zip
         additional_subs = []
         for sub in subtitles:
 
@@ -372,18 +374,18 @@ class ItaSAProvider(Provider):
 
                     for index, name in enumerate(zf.namelist()):
 
-                        if name[0] == 0:
-                            # First elemnent
-                            sub.content = fix_line_ending(zf.read(name[1]))
-                            sub.full_data = name[1]
+                        if index == 0:
+                            # First element
+                            sub.content = fix_line_ending(zf.read(name))
+                            sub.full_data = name
                         else:
                             add_sub = copy.deepcopy(sub)
-                            add_sub.content = fix_line_ending(zf.read(name[1]))
-                            add_sub.full_data = name[1]
+                            add_sub.content = fix_line_ending(zf.read(name))
+                            add_sub.full_data = name
                             additional_subs.append(add_sub)
                 else:
                     sub.content = fix_line_ending(zf.read(zf.namelist()[0]))
-                    sub.full_data = zf.namelist()[0]
+                    sub.full_data = zf.namelist()
 
         return subtitles + additional_subs
 
