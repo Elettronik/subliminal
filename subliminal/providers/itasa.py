@@ -253,7 +253,7 @@ class ItaSAProvider(Provider):
 
         return r.content
 
-    def query(self, series, season, episode, format, resolution, country=None):
+    def query(self, series, season, episode, video_format, resolution, country=None):
 
         # To make queries you need to be logged in
         if not self.logged_in:
@@ -267,17 +267,17 @@ class ItaSAProvider(Provider):
 
         # get the page of the season of the show
         logger.info('Getting the subtitle of show id %d, season %d episode %d, format %r', show_id,
-                    season, episode, format)
+                    season, episode, video_format)
         subtitles = []
 
         # Default format is SDTV
-        if format is None or format.lower() == 'hdtv':
+        if video_format is None or video_format.lower() == 'hdtv':
             if resolution in ('1080i', '1080p', '720p'):
                 sub_format = resolution
             else:
                 sub_format = 'normale'
         else:
-            sub_format = format.lower()
+            sub_format = video_format.lower()
 
         # Look for year
         params = {
@@ -319,7 +319,7 @@ class ItaSAProvider(Provider):
                         subtitle.find('show_name').text,
                         season,
                         episode,
-                        format,
+                        video_format,
                         year,
                         subtitle.find('name').text)
 
@@ -349,7 +349,7 @@ class ItaSAProvider(Provider):
                         subtitle.find('show_name').text,
                         season,
                         episode,
-                        format,
+                        video_format,
                         year,
                         subtitle.find('name').text)
 
