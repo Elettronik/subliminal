@@ -326,3 +326,19 @@ def test_find_subtitle_season():
 
     assert {subtitle.language for subtitle in subtitles} == languages
     assert {subtitle.sub_id for subtitle in subtitles} == {34442}
+
+
+@pytest.mark.integration
+@vcr.use_cassette
+def test_find_subtitle_neither_season():
+    video = Episode(os.path.join('Breaking Bad', 'Season 04', 'S04E13 - Face Off.mp4'),
+                    'Breaking Bad', 4, 13, title='Face Off', year=2008, tvdb_id=4164050,
+                    series_tvdb_id=81189, series_imdb_id='tt0903747', format='UHD', release_group='SPARROW',
+                    resolution='720p', video_codec='h264', audio_codec='AC3', imdb_id='tt1683088', size=503587153)
+    languages = {Language('ita')}
+    with ItaSAProvider(test_user, test_password) as provider:
+        provider.initialize()
+        subtitles = provider.list_subtitles(video, languages)
+
+    assert {subtitle.language for subtitle in subtitles} == set()
+    assert {subtitle.sub_id for subtitle in subtitles} == set()
