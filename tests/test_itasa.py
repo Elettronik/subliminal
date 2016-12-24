@@ -24,7 +24,7 @@ def test_get_matches_season_episode_resolution_tvdb(episodes):
     subtitle = ItaSASubtitle(5514, 'The Big Bang Theory', 7, 5, '720p', 2007, 80379,
                              'The.Big.Bang.Theory.s07e05.720p.sub.itasa.srt')
     matches = subtitle.get_matches(episodes['bbt_s07e05'])
-    assert matches == {'series', 'season', 'episode', 'resolution', 'year', 'tvdb_id'}
+    assert matches == {'series', 'season', 'episode', 'resolution', 'year',  'series_tvdb_id'}
 
 
 def test_get_matches_season_episode_resolution(episodes):
@@ -342,3 +342,26 @@ def test_find_subtitle_neither_season():
 
     assert {subtitle.language for subtitle in subtitles} == set()
     assert {subtitle.sub_id for subtitle in subtitles} == set()
+
+
+@pytest.mark.integration
+@vcr.use_cassette
+def test_find_subtitle_full_season():
+
+    video = Episode(os.path.join('Person of Interest', 'Season 03', 'S03E18 - Allegiance.mkv'),
+                    'Person of Interest', 3, 18, title='Allegiance', year=2011, tvdb_id=4778372,
+                    series_tvdb_id=248742, series_imdb_id='tt1839578', format='BluRay', release_group='DEMAND',
+                    resolution=None, video_codec='h264', audio_codec='AAC', imdb_id='tt3526628', size=256363868)
+    languages = {Language('ita')}
+    with ItaSAProvider(test_user, test_password) as provider:
+        provider.initialize()
+        subtitles = provider.list_subtitles(video, languages)
+
+    assert len(subtitles) == 23
+    assert {subtitle.language for subtitle in subtitles} == {Language('ita')}
+    for subtitle in subtitles:
+        if subtitle.episode == 18:
+            assert subtitle.get_matches(video) == set({'series_tvdb_id', 'series', 'year', 'season', 'format',
+                                                       'episode'})
+        else:
+            assert subtitle.get_matches(video) == set({'series_tvdb_id', 'series', 'year', 'season', 'format'})
