@@ -2,7 +2,10 @@ interactions:
 - request:
     body: null
     headers:
-      User-Agent: [Subliminal/2.0.rc1]
+      Accept: ['*/*']
+      Accept-Encoding: ['gzip, deflate']
+      Connection: [keep-alive]
+      User-Agent: [Subliminal/2.1.0.dev]
     method: GET
     uri: https://api.italiansubs.net/api/rest/shows/search?q=The+Big+How+I+Met+Your+Mother&apikey=d86ad6ec041b334fac1e512174ee04d5
   response:
@@ -12,63 +15,14 @@ interactions:
 
 '}
     headers:
-      alternate-protocol: ['443:npn-spdy/3.1']
       cache-control: ['no-store, no-cache, must-revalidate, post-check=0, pre-check=0']
       connection: [keep-alive]
       content-type: [text/xml;charset=utf-8]
-      date: ['Thu, 14 Apr 2016 21:07:34 GMT']
+      date: ['Sat, 24 Dec 2016 16:24:14 GMT']
       expires: ['Thu, 19 Nov 1981 08:52:00 GMT']
       pragma: [no-cache]
-      server: [nginx/1.8.0]
-      set-cookie: [PHPSESSID=8d961eb5aedb7c3d780651f417a9f14c; path=/]
-      x-powered-by: [PHP/5.6.16]
-    status: {code: 200, message: OK}
-- request:
-    body: null
-    headers:
-      User-Agent: [Subliminal/2.0.rc1]
-    method: GET
-    uri: https://api.italiansubs.net/api/rest/shows/search?q=The+Big+How+I+Met+Your+Mother&apikey=d86ad6ec041b334fac1e512174ee04d5
-  response:
-    body: {string: !!python/unicode '<?xml version="1.0" encoding="utf-8"?>
-
-        <root><data><shows/><page>1</page><pages>0</pages><count>0</count><next/></data><status>success</status></root>
-
-'}
-    headers:
-      alternate-protocol: ['443:npn-spdy/3.1']
-      cache-control: ['no-store, no-cache, must-revalidate, post-check=0, pre-check=0']
-      connection: [keep-alive]
-      content-type: [text/xml;charset=utf-8]
-      date: ['Sat, 16 Apr 2016 08:02:55 GMT']
-      expires: ['Thu, 19 Nov 1981 08:52:00 GMT']
-      pragma: [no-cache]
-      server: [nginx/1.8.0]
-      set-cookie: [PHPSESSID=286b0fb99957ae9f8d5e657c75f68479; path=/]
-      x-powered-by: [PHP/5.6.16]
-    status: {code: 200, message: OK}
-- request:
-    body: null
-    headers:
-      User-Agent: [Subliminal/2.0.rc1]
-    method: GET
-    uri: https://api.italiansubs.net/api/rest/shows/search?q=The+Big+How+I+Met+Your+Mother&apikey=d86ad6ec041b334fac1e512174ee04d5
-  response:
-    body: {string: !!python/unicode '<?xml version="1.0" encoding="utf-8"?>
-
-        <root><data><shows/><page>1</page><pages>0</pages><count>0</count><next/></data><status>success</status></root>
-
-'}
-    headers:
-      alternate-protocol: ['443:npn-spdy/3.1']
-      cache-control: ['no-store, no-cache, must-revalidate, post-check=0, pre-check=0']
-      connection: [keep-alive]
-      content-type: [text/xml;charset=utf-8]
-      date: ['Sat, 16 Apr 2016 08:11:38 GMT']
-      expires: ['Thu, 19 Nov 1981 08:52:00 GMT']
-      pragma: [no-cache]
-      server: [nginx/1.8.0]
-      set-cookie: [PHPSESSID=bd41f28b3d15d164be1253c41ef8e336; path=/]
-      x-powered-by: [PHP/5.6.16]
+      server: [nginx/1.10.2]
+      set-cookie: [PHPSESSID=7abf04039fc299a7d67a72696a0c7193; path=/]
+      x-powered-by: [PHP/5.6.28]
     status: {code: 200, message: OK}
 version: 1
