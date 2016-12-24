@@ -2,33 +2,38 @@ interactions:
 - request:
     body: null
     headers:
-      User-Agent: [Subliminal/2.0.rc1]
+      Accept: ['*/*']
+      Accept-Encoding: ['gzip, deflate']
+      Connection: [keep-alive]
+      User-Agent: [Subliminal/2.1.0.dev]
     method: GET
     uri: https://api.italiansubs.net/api/rest/users/login?apikey=d86ad6ec041b334fac1e512174ee04d5
   response:
     body: {string: !!python/unicode '<?xml version="1.0" encoding="utf-8"?>
 
-        <root><data><user><id>234965</id><name>elettronik</name><email>elettronik@gmail.com</email><last_visit>2016-04-16T06:19:33+02:00</last_visit><authcode>a2ce85688443779c0e802b1092273aa4</authcode><has_myitasa>1</has_myitasa><username>elettronik</username><register_date>2008-10-13T22:51:29+02:00</register_date><gender>unknown</gender><birthdate>0001-01-01</birthdate><location/><website_url/><unread_messages>0</unread_messages><avatar/></user></data><status>success</status></root>
+        <root><data><user><id>713600</id><name>subliminal-test</name><email>elettronik+subliminal-test@gmail.com</email><last_visit>2016-12-24T16:22:27+01:00</last_visit><authcode>1e5d5c311f4ef3d070dc965d934b95b6</authcode><has_myitasa>0</has_myitasa><username>subliminal-test</username><register_date>2016-03-06T17:08:20+01:00</register_date><gender>unknown</gender><birthdate>0001-01-01</birthdate><location/><website_url/><unread_messages>0</unread_messages><avatar/></user></data><status>success</status></root>
 
 '}
     headers:
-      alternate-protocol: ['443:npn-spdy/3.1']
       cache-control: ['no-store, no-cache, must-revalidate, post-check=0, pre-check=0']
       connection: [keep-alive]
       content-type: [text/xml;charset=utf-8]
-      date: ['Sat, 16 Apr 2016 08:15:48 GMT']
+      date: ['Sat, 24 Dec 2016 16:24:10 GMT']
       expires: ['Thu, 19 Nov 1981 08:52:00 GMT']
       pragma: [no-cache]
-      server: [nginx/1.8.0]
-      set-cookie: [PHPSESSID=2bca22f9907dda7c38cb69728cdd11a9; path=/]
-      x-powered-by: [PHP/5.6.16]
+      server: [nginx/1.10.2]
+      set-cookie: [PHPSESSID=2f0d9bfd69efd808bccf9a66766208ed; path=/]
+      x-powered-by: [PHP/5.6.28]
     status: {code: 200, message: OK}
 - request:
     body: task=login&silent=true&option=com_user&remember=yes
     headers:
-      Content-Length: ['86']
+      Accept: ['*/*']
+      Accept-Encoding: ['gzip, deflate']
+      Connection: [keep-alive]
+      Content-Length: ['99']
       Content-Type: [application/x-www-form-urlencoded]
-      User-Agent: [Subliminal/2.0.rc1]
+      User-Agent: [Subliminal/2.1.0.dev]
     method: POST
     uri: http://www.italiansubs.net/index.php
   response:
@@ -36,9 +41,22 @@ interactions:
     headers:
       connection: [keep-alive]
       content-type: [text/html; charset=utf-8]
-      date: ['Sat, 16 Apr 2016 08:15:49 GMT']
-      location: ['http://www.italiansubs.net/']
-      server: [nginx/1.8.0]
-      x-powered-by: [PHP/5.6.16]
+      date: ['Sat, 24 Dec 2016 16:24:11 GMT']
+      location: ['http://www.italiansubs.net/index.php?option=com_user']
+      p3p: [CP="NOI ADM DEV PSAi COM NAV OUR OTRo STP IND DEM"]
+      server: [nginx/1.10.2]
+      set-cookie: [08c499f64b48fa670c9b210e6a9f5f28=aae67935782775bd47738fa90b7b8d0f;
+          path=/, PHPSESSID=a8d801236648736d5fdb044254da151d; path=/; domain=.italiansubs.net,
+        'PHPSESSID=a8d801236648736d5fdb044254da151d; expires=Fri, 30-Dec-2016 18:24:11
+          GMT; Max-Age=525600; path=/; domain=.italiansubs.net', 'SMFCookie17499=a%3A4%3A%7Bi%3A0%3Bs%3A6%3A%22628840%22%3Bi%3A1%3Bs%3A40%3A%223eb307721f116ce20d91f846207d2d66a0b46c6b%22%3Bi%3A2%3Bi%3A1514132651%3Bi%3A3%3Bi%3A2%3B%7D;
+          expires=Sun, 24-Dec-2017 16:24:11 GMT; Max-Age=31536000; path=/; domain=.italiansubs.net',
+        PHPSESSID=cffc02d64ff3ba3f0fbf43b41bd88969; path=/; domain=.italiansubs.net,
+        'PHPSESSID=a8d801236648736d5fdb044254da151d; expires=Fri, 30-Dec-2016 18:24:11
+          GMT; Max-Age=525600; path=/; domain=.italiansubs.net', 'Max-Age=31536000;
+          expires=Sun, 24-Dec-2017 16:24:11 GMT; Max-Age=31536000; path=/; domain=.italiansubs.net',
+        'PHPSESSID=cffc02d64ff3ba3f0fbf43b41bd88969; expires=Fri, 30-Dec-2016 18:24:11
+          GMT; Max-Age=525600; path=/; domain=.italiansubs.net', 'cb7d0ded6b8cd9e20ce31b4d792da3e9=54+E57+E4A16+3+B+C12464A+3415957585D1B58465E+1+5+21B4741+3+9595E5C5A+4581C115C404212+84A5C+B+D1445594A1042+B42541A+247+E5050+A114641+75858+8505D575C1E4D+3404314+E45;
+          expires=Sun, 24-Dec-2017 16:24:11 GMT; Max-Age=31536000; path=/']
+      x-powered-by: [PHP/5.6.28]
     status: {code: 301, message: Moved Permanently}
 version: 1
