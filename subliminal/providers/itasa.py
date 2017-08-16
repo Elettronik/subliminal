@@ -111,15 +111,18 @@ class ItaSAProvider(Provider):
 
             self.auth_code = root.find('data/user/authcode').text
 
-            data = {
-                'username': self.username,
-                'passwd': self.password,
-                'remember': 'yes',
-                'option': 'com_user',
-                'task': 'login',
-                'silent': 'true'
-            }
-            r = self.session.post('http://www.italiansubs.net/index.php', data=data, allow_redirects=False, timeout=30)
+            r = self.session.get('https://www.italiansubs.net/', allow_redirects=True, timeout=30)
+            form = re.search('<form.*?id="form-login".*?>.*?</form>', r.content, re.DOTALL)
+            input_matcher = re.finditer('<input.*?name="(.*?)".*?value="(.*?)".*?/>', form.group())
+
+            data = {}
+
+            for inputMatch in input_matcher:
+                data[inputMatch.group(1)] = inputMatch.group(2)
+            data['username'] = self.username
+            data['passwd'] = self.password
+
+            r = self.session.post('https://www.italiansubs.net/index.php', data=data, allow_redirects=True, timeout=30)
             r.raise_for_status()
 
             self.logged_in = True
