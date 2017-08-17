@@ -1,0 +1,74 @@
+interactions:
+- request:
+    body: null
+    headers:
+      User-Agent: [Subliminal/2.0.rc1]
+    method: GET
+    uri: https://api.italiansubs.net/api/rest/shows/search?q=The+Big+Bang&apikey=d86ad6ec041b334fac1e512174ee04d5
+  response:
+    body: {string: !!python/unicode '<?xml version="1.0" encoding="utf-8"?>
+
+        <root><data><shows><show><id>399</id><name>The Big Bang Theory</name></show></shows><page>1</page><pages>1</pages><count>1</count><next/></data><status>success</status></root>
+
+'}
+    headers:
+      alternate-protocol: ['443:npn-spdy/3.1']
+      cache-control: ['no-store, no-cache, must-revalidate, post-check=0, pre-check=0']
+      connection: [keep-alive]
+      content-type: [text/xml;charset=utf-8]
+      date: ['Thu, 14 Apr 2016 21:07:33 GMT']
+      expires: ['Thu, 19 Nov 1981 08:52:00 GMT']
+      pragma: [no-cache]
+      server: [nginx/1.8.0]
+      set-cookie: [PHPSESSID=cf1fdf95910b5307db98c69e79eb9bf1; path=/]
+      x-powered-by: [PHP/5.6.16]
+    status: {code: 200, message: OK}
+- request:
+    body: null
+    headers:
+      User-Agent: [Subliminal/2.0.rc1]
+    method: GET
+    uri: https://api.italiansubs.net/api/rest/shows/search?q=The+Big+Bang&apikey=d86ad6ec041b334fac1e512174ee04d5
+  response:
+    body: {string: !!python/unicode '<?xml version="1.0" encoding="utf-8"?>
+
+        <root><data><shows><show><id>399</id><name>The Big Bang Theory</name></show></shows><page>1</page><pages>1</pages><count>1</count><next/></data><status>success</status></root>
+
+'}
+    headers:
+      alternate-protocol: ['443:npn-spdy/3.1']
+      cache-control: ['no-store, no-cache, must-revalidate, post-check=0, pre-check=0']
+      connection: [keep-alive]
+      content-type: [text/xml;charset=utf-8]
+      date: ['Sat, 16 Apr 2016 08:02:54 GMT']
+      expires: ['Thu, 19 Nov 1981 08:52:00 GMT']
+      pragma: [no-cache]
+      server: [nginx/1.8.0]
+      set-cookie: [PHPSESSID=179af784356aa16425ae99d2192860f5; path=/]
+      x-powered-by: [PHP/5.6.16]
+    status: {code: 200, message: OK}
+- request:
+    body: null
+    headers:
+      User-Agent: [Subliminal/2.0.rc1]
+    method: GET
+    uri: https://api.italiansubs.net/api/rest/shows/search?q=The+Big+Bang&apikey=d86ad6ec041b334fac1e512174ee04d5
+  response:
+    body: {string: !!python/unicode '<?xml version="1.0" encoding="utf-8"?>
+
+        <root><data><shows><show><id>399</id><name>The Big Bang Theory</name></show></shows><page>1</page><pages>1</pages><count>1</count><next/></data><status>success</status></root>
+
+'}
+    headers:
+      alternate-protocol: ['443:npn-spdy/3.1']
+      cache-control: ['no-store, no-cache, must-revalidate, post-check=0, pre-check=0']
+      connection: [keep-alive]
+      content-type: [text/xml;charset=utf-8]
+      date: ['Sat, 16 Apr 2016 08:11:37 GMT']
+      expires: ['Thu, 19 Nov 1981 08:52:00 GMT']
+      pragma: [no-cache]
+      server: [nginx/1.8.0]
+      set-cookie: [PHPSESSID=122cfecb36e713115d868c456e45ffd6; path=/]
+      x-powered-by: [PHP/5.6.16]
+    status: {code: 200, message: OK}
+version: 1
